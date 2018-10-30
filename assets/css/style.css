@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 body.background{
     background-image: url(../img/Background/hipsterwoman.0-1024x683-high.jpg);
@@ -57,7 +59,6 @@ img#logo{
     padding-bottom: 3em;
 }
 .logearse{
-    background-color: aqua;
     margin-left: 3.5em;
     padding: 10px;
 }
@@ -68,4 +69,15 @@ article.logearse form{
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 1px 1px;
     grid-template-areas: ".";
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+@media only screen and (max-width:600px){
+    .grid-container{
+        grid-template-columns: 100%;
+    }
 }

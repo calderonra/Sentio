@@ -21,42 +21,48 @@
             </div>
         </header>
         <main class="main">
-            <article class="logearse">
-                <form action="#" class="formulario" method="POST">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="email@domain.com">
-                    <label for="password">Password</label>
-                    <input type="password" name="password">
-                </form>
-                <div class="boton-login">
-                    <a class="login" href="html/Inicio/inicio.html"><span>Log In</span></a>
+            <div class="grid-container">
+                <div class="caja">
+                    <article class="logearse">
+                        <form action="#" class="formulario" method="POST">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="email@domain.com">
+                            <label for="password">Password</label>
+                            <input type="password" name="password">
+                        </form>
+                        <div class="boton-login">
+                            <a class="login" href="html/Inicio/inicio.html">Log In</a>
+                        </div>
+                    </article>
                 </div>
-            </article>
-            <article class="novedades">
-                <div class="album">
-                    <img class="img" src="">
+                <div class="caja">
+                    <article class="novedades">
+                        <div class="album">
+                            <img class="img" src="">
+                        </div>
+                        <div class=canciones>
+                            <div class="top">
+                                <h2 class="encabezado">Top 3</h2>
+                            </div>
+                            <div class="lista">
+                                <ul class="nombre">
+                                    <li>Cancion 1</li>
+                                    <li>Cancion 2</li>
+                                    <li>Cancion 3</li>
+                                </ul>
+                            </div>
+                            <div class="boton-reproducir">
+                                <input type="button" value="Reproducir" onclick="location.href='#'">
+                            </div>
+                        </div>
+                    </article>
                 </div>
-                <div class=canciones>
-                    <div class="top">
-                        <h2 class="encabezado">Top 3</h2>
-                    </div>
-                    <div class="lista">
-                        <ul class="nombre">
-                            <li>Cancion 1</li>
-                            <li>Cancion 2</li>
-                            <li>Cancion 3</li>
-                        </ul>
-                    </div>
-                    <div class="boton-reproducir">
-                        <input type="button" value="Reproducir" onclick="location.href='#'">
-                    </div>
-                </div>
-            </article>
+            </div>
         </main>
     </div>
 
     <footer class="footer">
-            <div>footer</div>
+        <div>footer</div>
     </footer>
 </body>
 
