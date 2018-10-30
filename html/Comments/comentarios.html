@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lista de foros</title>
+    <title>Comentarios de discusiones</title>
+    <link rel="icon" type="image/png" href="../../assets/img/logo/icon.png">
 </head>
 <body>
     <div class="contenedor">
@@ -13,11 +14,11 @@
                 <h1 class="logo">logo</h1>
             </div>
             <div class="reproductor">
-        
+                        
             </div>
             <div class="perfil">
                 <div class="img-perfil">
-                        
+                                        
                 </div>
                 <div class="nombre">
                     <h2 id="name">Nombre del usuario</h2>
@@ -37,15 +38,17 @@
         </nav>
         <main class="main">
             <section class="seccion-principal">
-                <table class="discusiones">
-                    <tr class="fila">
-                        <th class="encabezado">Nombre del foro</th>
-                        <th class="encabezado">Total de discusiones</th>
-                    </tr>
-                    <tr class="filas">
-                        <td class="celdas"></td>
-                    </tr>
-                </table>
+                <h1 class="nombre-discusion"></h1>
+                <div class="publicacion-principal">
+
+                </div>
+                <div class="nuevo-comentario">
+                    <textarea name="comentario" rows="" cols="" placeholder="Nuevo comentario"></textarea>
+                    <input type="button" value="Agregar" onclick="location.href='#'">
+                </div>
+                <div class="comentario">
+                    <h2 class="comentarios">Comentarios</h2>
+                </div>
             </section>
             <aside class="seccion-secundaria">
                 <div class="amigos">
@@ -64,7 +67,7 @@
                 <section class="foros">
                     <h2 class="lista-foro">Foros suscritos</h2>
                     <ul class="suscripciones">
-        
+                
                     </ul>
                 </section>
             </aside>
