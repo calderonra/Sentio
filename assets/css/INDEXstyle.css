@@ -184,6 +184,10 @@ footer>div>a{
     right: 60vh;
     text-shadow: 2px 2px #000000;
 }
+
+h2.encabezado{
+    font-family: 'Raleway', sans-serif;
+}
 @media only screen and (max-width:600px){
     *{
         overflow: scroll;
@@ -207,5 +211,14 @@ footer>div>a{
     }
      .nombre img{
          width: 60%;
+     }
+     .slogan{
+        font-size: 100%;
+        bottom: 40px;
+        right: 60vh;
+     }
+     h2.encabezado{
+         font-size: 15px;
+         
      }
 }
