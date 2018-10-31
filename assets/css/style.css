@@ -1,83 +1,73 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+    overflow: hidden;
 }
-body.background{
-    background-image: url(../img/Background/hipsterwoman.0-1024x683-high.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100%;
-    background-attachment: fixed;
-}
+
 .header{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px;
-    margin: 10px;
-    margin-bottom: 30px;
-    padding-bottom: 6px;
-    margin-top: 0;
+    grid-template-columns: 50% 50%;
     background-color: white;
     box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.5);
 }
 
+img#logo{
+    width: 50%;
+}
 a.registro{
-    float: left;
-    margin-left: 50%;
-    text-decoration: none;
-    padding: 15px;
-    font-size: 15px;
-    color: #018B00;
-    border: 2px solid #018B00;
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    color: #0E7871;
+    border: 2px solid #0E7871;
     border-radius: 25px;
-    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 0.3em;  
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: 3%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 3%;
+
 }
 a.registro:hover{
-    float: left;
-    margin-left: 50%;
-    text-decoration: none;
-    padding: 15px;
-    font-size: 15px;
-    color: white;
-    background-color: #018B00;
-    border: 2px solid #018B00;
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    background-color: #0E7871;
+    color: #ffffff;
+    border: 2px solid #0E7871;
     border-radius: 25px;
     cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 0.3em;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: 3%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 3%;
 }
-img#logo{
-    width: 35ch;
-    margin: -10px;
+
+.background{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
 }
+
 .footer{
     position: absolute;
     bottom: 0;
     color: white;
     width: 100%;
     background-color: #031920;
-    padding-bottom: 3em;
-}
-.logearse{
-    margin-left: 3.5em;
-    padding: 10px;
-}
-article.logearse form{
-    display: grid;
-    height: 100%;
-    grid-template-columns: 0.3fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 1px 1px;
-    grid-template-areas: ".";
-}
-
-.grid-container{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-@media only screen and (max-width:600px){
-    .grid-container{
-        grid-template-columns: 100%;
-    }
+    padding-bottom: 2em;
 }
