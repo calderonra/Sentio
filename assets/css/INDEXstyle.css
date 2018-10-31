@@ -94,7 +94,7 @@ label#style{
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    margin-left: 14vw;
+    /*margin-left: 14vw;*/
 }
 .move>a{
     color: white;
@@ -109,6 +109,10 @@ label#style{
     flex-shrink: 0;
     height: 100%;
 }
+.slide img{
+    display: flex;
+    justify-content: center;
+}
 
 #BIENVENIDA{
     font-size: 20px;
@@ -117,15 +121,16 @@ label#style{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     position: absolute;
-    bottom: -3px;
+    bottom: 0;
     color: white;
     width: 100%;
     background-color: #031920;
-    padding-bottom: 2.5em;
+    padding-bottom: 2em;
 }
 div.footer{
-    padding-bottom: 1.3%;
+    padding-bottom: 0.5%;
     text-align: center;
+
 }
 #cr{
     color: gray;
@@ -137,7 +142,9 @@ footer>div>a{
     font-family: 'Roboto', sans-serif;
 }
 .novedades{
-    margin-top: 3.4vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
 }
 .login{
     color: #031920;
@@ -157,7 +164,7 @@ footer>div>a{
     width: 280px;
     border-radius: 20px;
     opacity: 0.8;
-    margin-left: 14vw;
+    /*margin-left: 14vw;*/
 }
 .boton:hover{
     color: #ffffff;
