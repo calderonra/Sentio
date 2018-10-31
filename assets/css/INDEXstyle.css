@@ -15,6 +15,8 @@
 
 img#logo{
     width: 50%;
+    margin-left: 10%;
+    margin-top: 0.5%;
 }
 a.registro{
     display: flex;
@@ -70,14 +72,25 @@ a.registro:hover{
     align-items: center;
 }
 article.logearse form{
-    display: grid;
-    height: 100%;
-    grid-template-columns: 0.3fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 1px 1px;
-    grid-template-areas: ".";
+    display: inline-grid;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
-
+label#style{
+    font-size: 20px;
+    padding-top: 18px;
+    padding-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+.caja>article.logearse{
+    background-color: #018B00;
+    opacity: 0.5;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 4%;
+    border-radius: 8px;
+}
 .nombre{
     width: 300px;
     /*height: 300px;*/
@@ -98,6 +111,9 @@ article.logearse form{
     width: 300px;
     flex-shrink: 0;
     height: 100%;
+}
+#BIENVENIDA{
+    font-size: 20px;
 }
 .footer{
     display: grid;
@@ -125,13 +141,15 @@ footer>div>a{
 .novedades{
     margin-top: 3.4vh;
 }
-.caja>article.logearse{
-    background-color: #018B00;
-    opacity: 0.5;
-    font-family: 'Roboto', sans-serif;
-}
 .login{
     color: #031920;
+}
+.boton-login:hover{
+    border: 2px solid #ffffff;
+    background-color: #0E7871;
+    border-radius: 25px;
+    padding: 8px;
+    cursor: pointer;
 }
 .boton{
     border: 2px solid #018B00;
