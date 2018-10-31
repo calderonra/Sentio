@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/INDEXstyle.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Italiana" rel="stylesheet">
+    
     <title>Sentio | Feel the music - enjoy the moments</title>
+    
     <link rel="icon" type="image/png" href="assets/img/logo/icon.png">
 </head>
 
@@ -42,32 +48,42 @@
                 </div>
                 <div class="caja">
                     <article class="novedades">
-                        <div class="album">
-                            <img class="img" src="">
-                        </div>
                         <div class=canciones>
                             <div class="top">
-                                <h2 class="encabezado">Top 3</h2>
+                                <h2 class="encabezado" style="font-family: 'Raleway', sans-serif;">LAS 3 MÁS ESCUCHADAS</h2>
                             </div>
                             <div class="lista">
                                 <ul class="nombre">
-                                    <li>Cancion 1</li>
-                                    <li>Cancion 2</li>
-                                    <li>Cancion 3</li>
+                                    <li class="slide" id="slide-1"><img class="img" src="http://cdn.gnxs.eu/cover/uuid/9209003/p/322/w/320/h/320.jpg"
+                                            alt="Portada del álbum"></li>
+                                    <li class="slide" id="slide-2"><img class="img" src="http://cdn.gnxs.eu/cover/uuid/7649016/p/322/w/320/h/320.jpg"
+                                            alt="Portada del álbum"></li>
+                                    <li class="slide" id="slide-3"><img class="img" src="https://s-media-cache-ak0.pinimg.com/originals/6d/d1/35/6dd135169b89db2474a5537dd6b5bbfd.jpg"
+                                            alt="Portada del álbum"></li>
                                 </ul>
+                                <div class="move">
+                                    <a href="#slide-1">◉</a>
+                                    <a href="#slide-2">◉</a>
+                                    <a href="#slide-3">◉</a>
+                                </div>
                             </div>
-                            <div class="boton-reproducir">
-                                <input type="button" value="Reproducir" onclick="location.href='#'">
+                            <div class="boton">
+                                <a class="reproductor" href="#">REPRODUCIR</a>
                             </div>
                         </div>
                     </article>
                 </div>
             </div>
         </main>
+        <p class="slogan">FEEL THE MUSIC - ENJOY THE MOMENTS</p>    
     </div>
-
     <footer class="footer">
-        <div>footer</div>
+        <div class="footer">
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Información de contacto</a>
+            <a href="#">Ayuda</a>
+            <h5 id="cr">© 2018 Sentio</h5>
+        </div>
     </footer>
 </body>
 
