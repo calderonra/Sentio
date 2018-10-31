@@ -12,7 +12,10 @@
     background-color: white;
     box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.5);
 }
-
+body{
+    background-image: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-169368.jpg);
+    background-size: cover;
+}
 img#logo{
     width: 50%;
     margin-left: 10%;
@@ -58,13 +61,6 @@ a.registro:hover{
     margin-bottom: 3%;
 }
 
-.background{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-}
-
 .grid-container{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -91,6 +87,7 @@ label#style{
     padding-bottom: 4%;
     border-radius: 8px;
 }
+
 .nombre{
     width: 300px;
     /*height: 300px;*/
@@ -112,6 +109,7 @@ label#style{
     flex-shrink: 0;
     height: 100%;
 }
+
 #BIENVENIDA{
     font-size: 20px;
 }
@@ -187,7 +185,27 @@ footer>div>a{
     text-shadow: 2px 2px #000000;
 }
 @media only screen and (max-width:600px){
+    *{
+        overflow: scroll;
+    }
     .grid-container{
         grid-template-columns: 100%;
     }
+    a.registro{
+        font-size: 8.5px;
+    }
+    #logo{
+        width: 60%;
+    }
+    .footer{
+        position: relative;
+        display: flex;
+        
+    }
+    .nombre{
+        margin-left: 4.5vw;
+    }
+     .nombre img{
+         width: 60%;
+     }
 }
