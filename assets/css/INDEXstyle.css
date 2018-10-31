@@ -94,7 +94,6 @@ label#style{
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    margin-left: 14vw;
 }
 .move>a{
     color: white;
@@ -137,7 +136,9 @@ footer>div>a{
     font-family: 'Roboto', sans-serif;
 }
 .novedades{
-    margin-top: 3.4vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
 }
 .login{
     color: #031920;
@@ -157,7 +158,6 @@ footer>div>a{
     width: 280px;
     border-radius: 20px;
     opacity: 0.8;
-    margin-left: 14vw;
 }
 .boton:hover{
     color: #ffffff;
