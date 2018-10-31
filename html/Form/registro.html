@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Registrarse</title>
     <link rel="icon" type="image/png" href="../../assets/img/logo/icon.png">
+    <link rel="stylesheet" href="/assets/css/FORMstyle.css">
 </head>
+
 <body>
     <div class="contenedor">
         <header class="header">
@@ -17,32 +20,41 @@
         <main class="main">
             <div class="logearse">
                 <form id="registrarse" action="#" method="POST">
-                    <label for="firstname">First Name</label>
-                    <input name="firstname" placeholder="First Name" type="text" required>
+                    <div class="cajaMadre">
+                    <div class="caja">
+                        <label for="firstname">First Name</label>
+                        <input name="firstname" placeholder="First Name" type="text" required>
 
-                    <label for="lastname">Last Name</label>
-                    <input name="lastname" placeholder="Last Name" type="text" required>
+                        <label for="lastname">Last Name</label>
+                        <input name="lastname" placeholder="Last Name" type="text" required>
+                    </div>
+                    <label for="Email">Email</label>
+                    <input type="email" name="email" placeholder="maxisun@gmail.com" required>
 
-                    <label for = "Email">Email</label>
-                    <input type = "email" name = "email" placeholder="maxisun@gmail.com" required>
-                    
-                    <label for = "password">Password</label>
-                    <input type = "password" name = "password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title = "Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-                    
-                    <label for = "verpassword">Verify Password</label>
-                    <input type = "password" name = "verpassword" name = "password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title = "Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        required>
+                    <div class="caja">
+                        <label for="verpassword">Verify Password</label>
+                        <input type="password" name="verpassword" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                            required>
+                    </div>
                     <label for="birthday">Birthdate</label>
-                    <input type="date" name="birthday" value="1992-11-14"/>
+                    <input type="date" name="birthday" value="1969-04-20" />
 
-                    <label for ="gender">Gender</label>
+                    <label for="gender">Gender</label>
                     <input name="gender" value="M" type="radio">M
                     <input name="gender" value="F" type="radio">F
+                    </div>
                 </form>
             </div>
             <div class="boton-registro">
-                <a class="registro" href="#"><span>Registrarse</span></a>
+                <a class="registro" href="#">
+                    <span>Registrarse</span>
+                </a>
             </div>
+
         </main>
         <footer>
             <section class="footer">
@@ -51,4 +63,5 @@
         </footer>
     </div>
 </body>
+
 </html>

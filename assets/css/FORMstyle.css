@@ -1,0 +1,10 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top:25%;
+}
+
+.cajaMadre{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
