@@ -125,6 +125,14 @@ footer>div>a{
 .novedades{
     margin-top: 3.4vh;
 }
+.caja>article.logearse{
+    background-color: #018B00;
+    opacity: 0.5;
+    font-family: 'Roboto', sans-serif;
+}
+.login{
+    color: #031920;
+}
 .boton{
     border: 2px solid #018B00;
     padding: 10px;
@@ -157,7 +165,7 @@ footer>div>a{
     font-size: 230%;
     position: absolute;
     bottom: 40px;
-    right: 50vh;
+    right: 60vh;
     text-shadow: 2px 2px #000000;
 }
 @media only screen and (max-width:600px){
