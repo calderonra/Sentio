@@ -66,6 +66,8 @@ a.registro:hover{
 .grid-container{
     display: grid;
     grid-template-columns: 50% 50%;
+    text-align: center;
+    align-items: center;
 }
 article.logearse form{
     display: grid;
@@ -78,10 +80,11 @@ article.logearse form{
 
 .nombre{
     width: 300px;
-    height: 300px;
+    /*height: 300px;*/
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    margin-left: 14vw;
 }
 .move>a{
     color: white;
@@ -119,23 +122,22 @@ footer>div>a{
     font-size: 13px;
     font-family: 'Roboto', sans-serif;
 }
+.novedades{
+    margin-top: 3.4vh;
+}
 .boton{
     border: 2px solid #018B00;
     padding: 10px;
     background-color: #ffffff;
-    margin-top: 15px;
+    margin-top: 10px;
     width: 280px;
     border-radius: 20px;
     opacity: 0.8;
+    margin-left: 14vw;
 }
 .boton:hover{
     color: #ffffff;
-    border: 2px solid #018B00;
-    padding: 10px;
     background-color: #018B00;
-    margin-top: 15px;
-    width: 280px;
-    border-radius: 20px;
     cursor: pointer;
 }
 .reproductor{
