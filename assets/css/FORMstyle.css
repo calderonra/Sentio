@@ -1,7 +1,8 @@
 body {
-    /*background-image: url(http://kreativo.se/backlogin.jpg);*/
+    background-image: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-321528.jpg);
+    background-size: cover;
   
-    background-color: whitesmoke;
+    /*background-color: whitesmoke;*/
   
     font-family: "Helvetica Neue", Helvetica, Arial;
     padding-top: 20px;
@@ -11,6 +12,7 @@ body {
     width: 406px;
     max-width: 406px;
     margin: 0 auto;
+    margin-top: 10%;
 }
 
 #signup {
