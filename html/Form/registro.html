@@ -11,56 +11,42 @@
 </head>
 
 <body>
-    <div class="contenedor">
-        <header class="header">
-            <div class="icono">
-                <h1 class="logo">logo</h1>
-            </div>
-        </header>
-        <main class="main">
-            <div class="logearse">
-                <form id="registrarse" action="#" method="POST">
-                    <div class="cajaMadre">
-                    <div class="caja">
-                        <label for="firstname">First Name</label>
-                        <input name="firstname" placeholder="First Name" type="text" required>
+    <div class="container">
 
-                        <label for="lastname">Last Name</label>
-                        <input name="lastname" placeholder="Last Name" type="text" required>
-                    </div>
-                    <label for="Email">Email</label>
-                    <input type="email" name="email" placeholder="maxisun@gmail.com" required>
+        <form id="signup">
 
-                    <label for="password">Password</label>
-                    <input type="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                        required>
-                    <div class="caja">
-                        <label for="verpassword">Verify Password</label>
-                        <input type="password" name="verpassword" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                            required>
-                    </div>
-                    <label for="birthday">Birthdate</label>
-                    <input type="date" name="birthday" value="1969-04-20" />
+            <div class="header">
 
-                    <label for="gender">Gender</label>
-                    <input name="gender" value="M" type="radio">M
-                    <input name="gender" value="F" type="radio">F
-                    </div>
-                </form>
-            </div>
-            <div class="boton-registro">
-                <a class="registro" href="#">
-                    <span>Registrarse</span>
-                </a>
+                <h1>Registro</h1>
+
+                <p>Introduce tus datos a continuacion</p>
+
             </div>
 
-        </main>
-        <footer>
-            <section class="footer">
+            <div class="sep"></div>
 
-            </section>
-        </footer>
+            <div class="inputs">
+                <input type="text" placeholder="nombre">
+                <input type="email" placeholder="e-mail" autofocus />
+
+                <input type="password" placeholder="contrasena" />
+                <label for="birthday">Fecha de nacimiento </label>
+                <input type="date" name="birthday" value="1969-04-20" />
+                <label for="music">Musica favorita </label>
+                <textarea rows="4" cols="50" placeholder="cuentanos cuales son tus gustos musicales">
+                    </textarea>
+                
+                <div class="checkboxy">
+                    <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">I accept the terms
+                        of use</label>
+                </div>
+
+                <a id="submit" href="#">Registrate a SENTIO </a>
+
+            </div>
+
+        </form>
+
     </div>
 </body>
 
