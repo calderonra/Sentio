@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.contenedor{
+    background-color: #E9EBEE;
+}
+/*Barra de navegación*/
+/*Banner*/
+.blue-bar{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    background-color: #040C22;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.5);
+}
+
+#Banner-simplificado{
+    width: 65%;
+    margin-left: 3.4%;
+    margin-top: 1.4%;
+    margin-bottom: 1%;
+}
+/*Perfil*/
+.perfil{
+    margin-top: 2%;
+    margin-left: 10%;
+    display: flex;
+    color: white;
+}
+
+.img-perfil>img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.Profile{
+    display: grid;
+    padding-top: 0;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-align: center;
+}
+#profile{
+    padding-top: 0;
+    color: #BDBDBD;
+    font-family: 'Montserrat', sans-serif;
+}
+#name{
+    font-size: 125%;
+    font-family: 'Oswald', sans-serif;
+}
+.menu{
+    margin-top: 2%;
+}
+/*Fin barra de navegación*/
+
+.ContenidoPrincipal{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    text-align: center;
+}
+/*Aside*/
+.Interes{
+    position: sticky;
+    border: 2px solid #badeff;
+    background-color: #d1e2ec;
+    border-radius: 25px;
+    margin-top: 10%;
+    margin-right: 10%;
+}
+
+.amigos{
+    margin: 5%;
+    border: 2px solid #4F5D73;
+    background-color: #4F5D73;
+    border-radius: 25px;
+}
+#fList{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.listaamigos{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding-top: 1%;
+}
+.canciones{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    border: 2px solid #042220;
+    background-color: #042220;
+    border-radius: 25px;
+    margin: 5%;
+}
+.foros{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    border: 2px solid #0E7871;
+    background-color: #0E7871;
+    border-radius: 25px;
+    margin: 5%;
+}
+/*Barra de navegación*/
+.nav{
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+.lista{
+    display: grid;
+    grid-template-columns: 15% 15% 15% 55%;
+}
+.lista>li{
+    border: 2px solid black;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.seccion-principal{
+    border: 2px solid black;
+    margin: 50px;   
+    background-color: white;
+}
