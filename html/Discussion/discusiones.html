@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Discusiones</title>
     <link rel="icon" type="image/png" href="../../assets/img/logo/icon.png">
+    <link rel="stylesheet" href="../../assets/bs/Web/css/bootstrap.min.css">
 </head>
 <body>
     <div class="contenedor">
+        <div class="container">
         <header class="header">
             <div class="icono">
                 <h1 class="logo">logo</h1>
@@ -27,6 +29,7 @@
                     <input type="button" value="Perfil" onclick="location.href='#'">
                 </div>
             </div>
+        </div>    
         </header>
         <nav class="nav">
             <ul class="lista">
@@ -36,8 +39,8 @@
                 <li><a href="#">Buscador</a></li>
             </ul>
         </nav>
-        <main class="main">
-            <section class="seccion-principal">
+        <main class="main row">
+            <section class="col-md-9">
                 <h1 class="nombre-foro"></h1>
                 <div class="buscador">
                     <label for="buscador"></label>
@@ -50,7 +53,7 @@
                     </ul>
                 </article>
             </section>
-            <aside class="seccion-secundaria">
+            <aside class="col-md-3">
                 <div class="amigos">
                     <input type="button" value="Amigos conectados" onclick="location.href='#'">
                 </div>
@@ -73,5 +76,6 @@
             </aside>
         </main>
     </div>
+    <script src="../../assets/bs/Web/js/bootstrap.min.js"></script>
 </body>
 </html>
