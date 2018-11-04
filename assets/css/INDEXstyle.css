@@ -79,8 +79,7 @@ label#style{
     font-family: 'Raleway', sans-serif;
 }
 .caja>article.logearse{
-    background-color: #018B00;
-    opacity: 0.5;
+    background-color: rgba(1, 139, 0, 0.5);
     font-family: 'Roboto', sans-serif;
     margin-left: 30%;
     margin-right: 30%;

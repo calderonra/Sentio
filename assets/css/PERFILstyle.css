@@ -1,17 +1,10 @@
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     text-decoration: none;
     list-style: none;
 }
-[role=button]{
-    cursor: pointer;
-}
-.contenedor{
-    /*background-color: #E9EBEE;*/
-    background-color: #DBDFE8;
-}
-/*Banner*/
+/*Nav top*/
 .blue-bar{
     display: grid;
     grid-template-columns: 25% 50% 25%;
@@ -49,7 +42,7 @@
     padding-right: 8%;
     text-align: center;
 }
-#profile{
+#edit{
     padding-top: 0;
     color: #BDBDBD;
     font-family: 'Montserrat', sans-serif;
@@ -61,12 +54,8 @@
 .menu{
     margin-top: 2%;
 }
+/*Fin nav top/
 
-.ContenidoPrincipal{
-    display: grid;
-    grid-template-columns: 75% 25%;
-    text-align: center;
-}
 /*Aside*/
 input#Search-Friends{
     padding: 1%;
@@ -94,13 +83,14 @@ input#Search-Friends{
     height: 14px;
 }
 .Interes{
-    position: fixed;
+    position: sticky;
     z-index: 100;
     right: 0;
+    left: 80%;
+    top: 14%;
     border: 2px solid #badeff;
     background-color: #d1e2ec;
     border-radius: 25px;
-    margin-top: 6.5%;
     width: 20%;
 }
 
@@ -110,52 +100,6 @@ input#Search-Friends{
     background-color: #4F5D73;
     border-radius: 25px;
 }
-/*
-@keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
-}
-
-.slider {
-	background: white;
-	height: 50px;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
-	width: 50px;
-}
-	.slider::before,
-	.slider::after {
-		content: "";
-		height: 50px;
-		position: absolute;
-		width: 50px;
-		z-index: 2;
-	}
-	
-	.slider::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
-
-	.slider::before {
-		left: 0;
-		top: 0;
-	}
-	
-	.slide-track {
-		animation: scroll 40s linear infinite;
-		display: flex;
-		width: calc(50px * 14);
-	}
-	
-	.slide {
-		height: 50px;
-		width: 50px;
-	}
-*/
-
 /*Carrousel*/
 .slide-track{
     display: flex;
@@ -181,7 +125,7 @@ input#Search-Friends{
     top: 95px;
     position: absolute;
     right: 15px;
-    left: 220px;
+    left: 230px;
 }
 /*Carrousel FIN*/
 
@@ -192,6 +136,7 @@ input#Search-Friends{
     background-color: #042220;
     border-radius: 25px;
     margin: 5%;
+    text-align: center;
 }
 .foros{
     color: white;
@@ -200,36 +145,57 @@ input#Search-Friends{
     background-color: #0E7871;
     border-radius: 25px;
     margin: 5%;
+    text-align: center;
 }
+/*Fin ASIDE*/
 
-/*Barra de navegación*/
-.nav{
-    margin-top: 10%;
-    margin-bottom: 5%;
+/*PORTADA*/
+div.Portada{
+    background-image: url("https://images.genius.com/f70ca7ca4c481eee12d0d5f9f9b409a7.1000x883x1.jpg") ;
+    background-size: cover;
+    height: 850px;
 }
-.lista{
+.sobreexponer{
+    padding-top: 18%;
     display: grid;
-    grid-template-columns: 10% 10% 10% 70%;
-    margin-left: 50px;
-    margin-right: 50px;
+    justify-content: center;
+}
+.imagen-perfil>img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 23%;
+    border: 2px solid #000000;
+    box-shadow: -15px 20px 40px -6px rgba(0,0,0,0.75);
+}
+div.informacion h2{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 5%;
+    color: white;
+    font-weight:normal;
+    font-size: 220%;
+    text-align: center;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+div.goto>a>img{
+    width: 50px;
+    margin-left: 40%;
+    margin-top: 5%;
 }
 
-.lista>li{
-    border: 2px solid rgb(110, 99, 99);
-    background-color: rgb(110, 99, 99,0.4);
- }
- #Search{
-     width: 100%;
- }
- .Busqueda{
-     display: flex;
- }
-/*Fin Barra navegaciòn*/
-.seccion-principal{
-    border: 2px solid black;
-    margin: 50px;   
-    background-color: white;
+
+/*FIN PORTADA*/
+/*Parte posterior a la portada*/
+.contenedor2{
+    background-color: #e6ffe6;
+    border: 2px  solid rgba(4, 12, 34, 0.5);
+    scroll-behavior: smooth;
 }
+.muro{
+    scroll-behavior: smooth; 
+}
+
+/*Fin parte posterior a la portada*/
 
 /*Footer*/
 div.footer{

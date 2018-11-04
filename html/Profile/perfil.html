@@ -1,84 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Perfil</title>
     <link rel="icon" type="image/png" href="../../assets/img/logo/icon.png">
+    <link rel="stylesheet" href="../../assets/css/PERFILstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script type="text/javascript" src="../../assets/js/transition.js"></script>
 </head>
+
 <body>
     <div class="contenedor">
         <header class="header">
-            <div class="icono">
-                <a href="../Inicio/inicio.html">Logo</a>
-            </div>
-            <div class="reproductor">
-            
-            </div>
-            <div class="perfil">
-                <div class="img">
-                        
+            <div class="blue-bar">
+                <div class="icono">
+                    <a href="../Inicio/inicio.html"><img src="../../assets/img/logo/simple banner.png" alt="Logo sentio"
+                            id="Banner-simplificado"></a>
                 </div>
-                <div class="nombre">
-                    <h2 id="name">Nombre del usuario</h2>
+                <div class="reproductor">
+
                 </div>
-                <div class="boton-perfil">
-                    <input type="button" value="Perfil" onclick="location.href='#'">
+                <div class="perfil">
+                    <div class="img-perfil">
+                        <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NDg0MDU0NzYwMjI4MzY3/usa---violence---dylan-klebold.jpg"
+                            alt="ProfileImage" width="25%">
+                    </div>
+                    <div class="Profile">
+                        <div class="nombre">
+                            <p id="name">Maximiliano Martinez</p>
+                        </div>
+                        <div class="boton-perfil">
+                            <a href="#" id="edit">Editar mi perfil</a>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <a href="../../index.html"><img src="../../assets/img/tools/baseline_more_vert_black_18dp.png"
+                                alt="MenuDesplegable" id="menu"></a>
+                    </div>
                 </div>
             </div>
         </header>
         <main class="main">
-            <div class="contenedor1">
+            <div class="Portada">
                 <section class="portada">
-                    <div class="img-perfil">
-                        
+                    <!--
+                    <div class="ImagenPortada">
+                            <img src="https://images.genius.com/f70ca7ca4c481eee12d0d5f9f9b409a7.1000x883x1.jpg" alt="">
+                    </div>-->
+                    <div class="sobreexponer">
+                        <div class="imagen-perfil">
+                            <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NDg0MDU0NzYwMjI4MzY3/usa---violence---dylan-klebold.jpg" alt="Foto de perfil de sentio">
+                        </div>
+                        <div class="informacion">
+                            <h2 id="usuario">Maximiliano Martinez</h2>
+                        </div>
+                        <div class="goto">
+                           <a href="#Wall"><img src="../../assets/img/tools/baseline_expand_more_black_18dp.png" alt="arrow"></a>
+                        </div>
                     </div>
-                    <div class="informacion">
-                        <h2 id="usuario">Nombre del usuario</h2>
-                    </div>  
                 </section>
             </div>
             <div class="contenedor2">
-                <section class="publicaciones">
-                    <div class="tops">
+                <div class="muro">
+                    <section class="publicaciones" id="Wall">
+                        <div class="tops">
                             <input type="button" value="Top 10 de canciones" name="top-canciones" onclick="location.href='#'">
                             <input type="button" value="Top 10 de artistas" name="top-artistas" onclick="location.href='#'">
-                    </div>
-                    <section class="mostrando-listas">
-                        <ul class="lista-top">
+                        </div>
+                        <section class="mostrando-listas">
+                            <ul class="lista-top">
 
-                        </ul>
-                    </section>
-                    <section class="publicaciones-realizadas">
-                        <ul class="lista-publicaciones">
+                            </ul>
+                        </section>
+                        <section class="publicaciones-realizadas">
+                            <ul class="lista-publicaciones">
 
-                        </ul>
+                            </ul>
+                        </section>
                     </section>
-                </section>
-                <aside class="seccion-secundaria">
-                    <div class="amigos">
-                        <input type="button" value="Amigos conectados" onclick="location.href='#'">
-                    </div>
-                    <section class="canciones">
-                        <h2 class="sons">Playlist de canciones</h2>
-                        <ul class="playlist">
-                            <li><a href="#">Canción1</a></li>
-                            <li><a href="#">Canción2</a></li>
-                            <li><a href="#">Canción3</a></li>
-                            <li><a href="#">Canción4</a></li>
-                            <li><a href="#">Canción5</a></li>
-                        </ul>
-                    </section>
-                    <section class="foros">
-                        <h2 class="lista-foro">Foros suscritos</h2>
-                        <ul class="suscripciones">
-        
-                        </ul>
-                    </section>
-                </aside>
+                </div>
+                <div class="Interes">
+                    <aside class="seccion-secundaria">
+                        <div class="amigos">
+                            <div class="buscadorF">
+                                <div class="SearchDiv">
+                                    <input id="Search-Friends" type="text" style="outline: none;" placeholder="Buscar amigos">
+                                    <button id="BuscarAmigosBoton"><img src="../../assets/img/tools/baseline_search_black_18dp.png"
+                                            alt=""></button>
+                                </div>
+                                <hr>
+                                <br>
+                            </div>
+                            <div class="slider">
+                                <div class="slide-track">
+                                    <div class="slide">
+                                        <a href=""><img src="http://ultimafoto.info/wp-content/uploads/2017/01/testamento-augusto-pinochet-300x300.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="slide">
+                                        <a href=""><img src="https://static.tvtropes.org/pmwiki/pub/images/lex_luthor_justice_league.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="slide">
+                                        <a href=""><img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE4MDAzNDEwNDY4Mzc0MDMw/george-w-bush-9232768-1-402.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="slide">
+                                        <a href=""><img src="https://www.birthdaycelebs.com/wp-content/uploads/people/frank-filthy-image.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="slide">
+                                        <a href=""><img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTUyMjgxNzQwMDkyNjQ2ODk2/gettyimages-888179100_luis-fonsi.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="slide">
+                                        <a href=""><img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE4MDAzNDEwNzg5ODI4MTEw/barack-obama-12782369-1-402.jpg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a aria-label="Siguiente" href="#" class="Mover" role="button"><img src="../../assets/img/tools/baseline_keyboard_arrow_right_black_18dp.png"
+                                    alt="arrow" id="arrowR"></a>
+                            <br>
+                        </div>
+                        <section class="canciones">
+                            <h2 class="songs" style="font-weight:normal;">Playlist de canciones</h2>
+                            <ul class="playlist">
+                                <li><a href="#">Canción1</a></li>
+                                <li><a href="#">Canción2</a></li>
+                                <li><a href="#">Canción3</a></li>
+                                <li><a href="#">Canción4</a></li>
+                                <li><a href="#">Canción5</a></li>
+                            </ul>
+                        </section>
+                        <section class="foros">
+                            <h2 class="lista-foro">Foros suscritos</h2>
+                            <ul class="suscripciones">
+                                <li id="foro"><a href="">Foro 1</a></li>
+                                <li id="foro"><a href="">Foro 2</a></li>
+                                <li id="foro"><a href="">Foro 3</a></li>
+                                <li id="foro"><a href="">Foro 4</a></li>
+                            </ul>
+                        </section>
+                    </aside>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
         </main>
     </div>
+    <footer>
+        <div class="footer">
+            <ul class="footer">
+                <li id="Fitem-logo"><img src="../../assets/img/logo/logo.png" alt="Sentio Logo"></li>
+                <li id="Fitem"><a href="#">Legal</a></li>
+                <li id="Fitem"><a href="#">Centro de privacidad</a></li>
+                <li id="Fitem"><a href="#">Sobre nosotros</a></li>
+                <li id="Fitem"><a href="#">Política de privacidad</a></li>
+                <li id="Fitem"><a href="#">Centro de ayuda</a></li>
+                <li id="FitemR">© 2018 Sentio SV</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
