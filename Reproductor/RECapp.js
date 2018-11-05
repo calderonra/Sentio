@@ -16,20 +16,20 @@ var songs = [{
     url: 'https://raw.githubusercontent.com/calderonra/Sentio/master/assets/tracks/Despacito.mp3?token=AjcXjK-5_x9ANETlCNFbDMom9mxAdEgMks5b6OsAwA%3D%3D',
     art: 'https://www.buenamusica.com/media/fotos/discos/l/luis-fonsi/luis-fonsi_despacito.jpg'
 },
-/*   
+   
 {
     title: 'Macintosh Plus',
     artist: 'リサフランク420 / 現代のコンピュ',
-    url: '',
+    url: 'https://github.com/calderonra/Sentio/blob/master/assets/tracks/Macintosh%20Plus.mp3?raw=true',
     art: 'https://cdn.shopify.com/s/files/1/1090/5356/products/R-10960101-1507236505-5542_jpeg_300x300.jpg?v=1537323822'
 },
 
 {
     title: 'All Star',
     artist: 'Smash Mouth',
-    url: '',
+    url: 'https://raw.githubusercontent.com/calderonra/Sentio/master/assets/tracks/All%20Star.mp3?token=AjcXjMkdS5T1UnKJzDQpWIv8PkmzOjlXks5b6PGjwA%3D%3D',
     art: 'https://upload.wikimedia.org/wikipedia/en/1/16/All_star.jpg'
-}*/];
+}];
 
 window.addEventListener('load', init(), false);
 
