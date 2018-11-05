@@ -190,6 +190,7 @@ h2.encabezado{
 @media only screen and (max-width:600px){
     *{
         overflow: scroll;
+        overflow-y:hidden;
     }
     .grid-container{
         grid-template-columns: 100%;
@@ -220,4 +221,5 @@ h2.encabezado{
          font-size: 15px;
          
      }
+     
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,50 @@
     <title>Discusiones</title>
     <link rel="icon" type="image/png" href="../../assets/img/logo/icon.png">
     <link rel="stylesheet" href="../../assets/bs/Web/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/DISCUSIONESStyle.css">
 </head>
+
 <body>
     <div class="contenedor">
-        <div class="container">
-        <header class="header">
-            <div class="icono">
-                <h1 class="logo">logo</h1>
-            </div>
-            <div class="reproductor">
-                
-            </div>
-            <div class="perfil">
-                <div class="img-perfil">
-                                
+        <div class="fluid-container">
+            <header class="header">
+                <div class="icono">
+                    <a href="#top"><img src="../../assets/img/logo/simple banner.png" alt="Logo sentio" id="Banner-simplificado"></a>
                 </div>
-                <div class="nombre">
-                    <h2 id="name">Nombre del usuario</h2>
+                <div class="reproductor">
+
                 </div>
-                <div class="boton-perfil">
-                    <input type="button" value="Perfil" onclick="location.href='#'">
+                <div class="perfil">
+                    <div class="img-perfil">
+
+                    </div>
+                    <div class="nombre">
+                        <h2 id="name">Nombre del usuario</h2>
+                    </div>
+                    <div class="boton-perfil">
+                        <input type="button" value="Perfil" onclick="location.href='#'">
+                    </div>
                 </div>
-            </div>
-        </div>    
+        </div>
         </header>
-        <nav class="nav">
-            <ul class="lista">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Notificaciones</a></li>
-                <li><a href="#">Mensajes</a></li>
-                <li><a href="#">Buscador</a></li>
-            </ul>
-        </nav>
+        <div class="fluid-container  ">
+            <div class="main row">
+                <nav class="navi">
+                    <ul class="lista col-md-12">
+                        <li><a href="#"><img src="../../assets/img/tools/baseline_home_black_18dp.png" alt="Inicio"></a></li>
+                        <li><a href="#"><img src="../../assets/img/tools/baseline_notifications_black_18dp.png" alt="Notificaciones"></a></li>
+                        <li><a href="#"><img src="../../assets/img/tools/baseline_forum_black_18dp.png" alt="Mensajes"></a></li>
+                        <li><a href="#">
+                                <div class="Busqueda">
+                                    <input id="Search" type="text" style="outline: none;" placeholder="Buscar">
+                                    <button id="Buscar"><img src="../../assets/img/tools/baseline_search_black_18dp.png"
+                                            alt=""></button>
+                                </div>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <main class="main row">
             <section class="col-md-9">
                 <h1 class="nombre-foro"></h1>
@@ -48,9 +61,34 @@
                     <input type="button" value="Buscar" onclick="location.href='#'">
                 </div>
                 <article class="discusiones">
-                    <ul class="lista-discusiones">
+                    <section class="seccion-principal">
+                        <div class="img">
 
-                    </ul>
+                        </div>
+                        <div class="publicacion">
+                            <p>Mostrando publicación</p>
+                        </div>
+                        <div class="publicacion">
+                            <p>Mostrando publicación</p>
+                        </div>
+                        <div class="publicacion">
+                            <p>Mostrando publicación</p>
+                        </div>
+                        <div class="publicacion">
+                            <p>Mostrando publicación</p>
+                        </div>
+                        <div class="publicacion">
+                            <p>Mostrando publicación</p>
+                        </div>
+                        <div class="publicacion">
+                            <p>Mostrando publicación</p>
+                        </div>
+                        <div class="publicacion">
+                            <p>Mostrando publicación</p>
+                        </div>
+                        <div class="publicacion">
+                            <p>Mostrando publicación</p>
+                        </div>
                 </article>
             </section>
             <aside class="col-md-3">
@@ -70,7 +108,7 @@
                 <section class="foros">
                     <h2 class="lista-foro">Foros suscritos</h2>
                     <ul class="suscripciones">
-        
+
                     </ul>
                 </section>
             </aside>
@@ -78,4 +116,5 @@
     </div>
     <script src="../../assets/bs/Web/js/bootstrap.min.js"></script>
 </body>
+
 </html>

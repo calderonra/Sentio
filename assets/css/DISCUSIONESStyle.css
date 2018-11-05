@@ -1,0 +1,26 @@
+.header{
+    background-color: #a39d9d;
+}
+.nav{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.lista{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 70%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.lista>li{
+    border: 2px solid rgb(110, 99, 99);
+    background-color: rgb(110, 99, 99,0.4);
+ }
+
+
+#Banner-simplificado{
+    width: 25%;
+    margin-left: 3.4%;
+    margin-top: 1.4%;
+    margin-bottom: 1%;
+}
