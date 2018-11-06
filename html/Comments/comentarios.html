@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Comentarios de discusiones</title>
     <link rel="icon" type="image/png" href="../../assets/img/logo/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 </head>
+
 <body>
     <div class="contenedor">
-        <header class="header">
+        <header class="header fluid-container main row">
             <div class="icono">
                 <h1 class="logo">logo</h1>
             </div>
             <div class="reproductor">
-                        
+
             </div>
             <div class="perfil">
                 <div class="img-perfil">
-                                        
+
                 </div>
                 <div class="nombre">
                     <h2 id="name">Nombre del usuario</h2>
@@ -28,15 +32,19 @@
                 </div>
             </div>
         </header>
-        <nav class="nav">
-            <ul class="lista">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Notificaciones</a></li>
-                <li><a href="#">Mensajes</a></li>
-                <li><a href="#">Buscador</a></li>
-            </ul>
-        </nav>
-        <main class="main">
+        <div class="fluid-container">
+            <nav class="nav main row">
+                <ul class="lista">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Notificaciones</a></li>
+                    <li><a href="#">Mensajes</a></li>
+                    <li><a href="#">Buscador</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="main row">
+            <div class="col-md-9">
             <section class="seccion-principal">
                 <h1 class="nombre-discusion"></h1>
                 <div class="publicacion-principal">
@@ -50,7 +58,8 @@
                     <h2 class="comentarios">Comentarios</h2>
                 </div>
             </section>
-            <aside class="seccion-secundaria">
+        </div>
+            <aside class="seccion-secundaria col-md-3" >
                 <div class="amigos">
                     <input type="button" value="Amigos conectados" onclick="location.href='#'">
                 </div>
@@ -67,11 +76,12 @@
                 <section class="foros">
                     <h2 class="lista-foro">Foros suscritos</h2>
                     <ul class="suscripciones">
-                
+
                     </ul>
                 </section>
             </aside>
         </main>
     </div>
 </body>
+
 </html>
