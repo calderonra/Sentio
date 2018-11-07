@@ -7,309 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sentio</title>
     <link rel="icon" type="image/png" href="../../assets/img/logo/icon.png">
-    <link rel="stylesheet" href="../../assets/css/INICIOstyle.css">
+    <!--<link rel="stylesheet" href="../../assets/css/INICIOstyle.css">-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
 </head>
 
 <body>
-    <div class="contenedor">
-        <header class="header">
-            <div class="blue-bar">
-                <div class="icono">
-                    <a href="#top"><img src="../../assets/img/logo/simple banner.png" alt="Logo sentio" id="Banner-simplificado"></a>
-                </div>
-                <div class="reproductor">
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-default" style="background-color: #040C22">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+                            <span class="sr-only">Menu</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
 
-                </div>
-                <div class="perfil">
-                    <div class="img-perfil">
-                        <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NDg0MDU0NzYwMjI4MzY3/usa---violence---dylan-klebold.jpg"
-                            alt="ProfileImage">
+                        <a href="#" class="navbar-brand"><img src="../../assets/img/logo/simple banner.png" alt="Logo sentio" id="Banner-simplificado" width="30%"></a>
                     </div>
-                    <div class="Profile">
-                        <div class="nombre">
-                            <p id="name">Maximiliano Martinez</p>
-                        </div>
-                        <div class="boton-perfil">
-                            <a href="../Profile/perfil.html" id="profile">Ir a mi perfil</a>
-                        </div>
-                    </div>
-                    <div class="menu">
-                        <a href="../../index.html"><img src="../../assets/img/tools/baseline_more_vert_black_18dp.png"
-                                alt="MenuDesplegable" id="menu"></a>
+                    <div class="collapse navbar-collapse" id="navbar-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="">Item #1</a></li>
+                            <li><a href="">Item #2</a></li>
+                            <li><a href="">Item #3</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
         </header>
-        <div class="ContenidoPrincipal">
-            <div class="Noticias">
-                <nav class="nav">
-                    <ul class="lista">
-                        <li><a href="#"><img src="../../assets/img/tools/baseline_home_black_18dp.png" alt="Inicio"></a></li>
-                        <li><a href="#"><img src="../../assets/img/tools/baseline_notifications_black_18dp.png" alt="Notificaciones"></a></li>
-                        <li><a href="#"><img src="../../assets/img/tools/baseline_forum_black_18dp.png" alt="Mensajes"></a></li>
-                        <li><a href="#">
-                                <div class="Busqueda">
-                                    <input id="Search" type="text" style="outline: none;" placeholder="Buscar">
-                                    <button id="Buscar"><img src="../../assets/img/tools/baseline_search_black_18dp.png"
-                                            alt=""></button>
-                                </div>
-                            </a></li>
-                    </ul>
-                </nav>
-                <main class=inicio>
-                    <section class="seccion-principal">
-                        <div class="img">
-
-                        </div>
-                        <div class="informacion">
-                            <h2 id="usuario">Nombre del usuario</h2>
-                        </div>
-                        <div class="publicacion">
-                            <p>Mostrando publicación</p>
-                        </div>
-                        <div class="botones">
-                            <input type="button" value="Comentar publicacion" name="comentar" onclick="location.href='#'">
-                            <input type="button" value="Escuchar cancion" name="escuchar" onclick="location.href='#'">
-                        </div>
-                    </section>
-
-                    <!--BORRAR-->
-                    <section class="seccion-principal">
-                        <div class="img">
-
-                        </div>
-                        <div class="informacion">
-                            <h2 id="usuario">Nombre del usuario</h2>
-                        </div>
-                        <div class="publicacion">
-                            <p>Mostrando publicación</p>
-                        </div>
-                        <div class="botones">
-                            <input type="button" value="Comentar publicacion" name="comentar" onclick="location.href='#'">
-                            <input type="button" value="Escuchar cancion" name="escuchar" onclick="location.href='#'">
-                        </div>
-                    </section>
-                    <section class="seccion-principal">
-                        <div class="img">
-
-                        </div>
-                        <div class="informacion">
-                            <h2 id="usuario">Nombre del usuario</h2>
-                        </div>
-                        <div class="publicacion">
-                            <p>Mostrando publicación</p>
-                        </div>
-                        <div class="botones">
-                            <input type="button" value="Comentar publicacion" name="comentar" onclick="location.href='#'">
-                            <input type="button" value="Escuchar cancion" name="escuchar" onclick="location.href='#'">
-                        </div>
-                    </section>
-                    <section class="seccion-principal">
-                        <div class="img">
-
-                        </div>
-                        <div class="informacion">
-                            <h2 id="usuario">Nombre del usuario</h2>
-                        </div>
-                        <div class="publicacion">
-                            <p>Mostrando publicación</p>
-                        </div>
-                        <div class="botones">
-                            <input type="button" value="Comentar publicacion" name="comentar" onclick="location.href='#'">
-                            <input type="button" value="Escuchar cancion" name="escuchar" onclick="location.href='#'">
-                        </div>
-                    </section>
-                    <section class="seccion-principal">
-                        <div class="img">
-
-                        </div>
-                        <div class="informacion">
-                            <h2 id="usuario">Nombre del usuario</h2>
-                        </div>
-                        <div class="publicacion">
-                            <p>Mostrando publicación</p>
-                        </div>
-                        <div class="botones">
-                            <input type="button" value="Comentar publicacion" name="comentar" onclick="location.href='#'">
-                            <input type="button" value="Escuchar cancion" name="escuchar" onclick="location.href='#'">
-                        </div>
-                    </section>
-                    <section class="seccion-principal">
-                        <div class="img">
-
-                        </div>
-                        <div class="informacion">
-                            <h2 id="usuario">Nombre del usuario</h2>
-                        </div>
-                        <div class="publicacion">
-                            <p>Mostrando publicación</p>
-                        </div>
-                        <div class="botones">
-                            <input type="button" value="Comentar publicacion" name="comentar" onclick="location.href='#'">
-                            <input type="button" value="Escuchar cancion" name="escuchar" onclick="location.href='#'">
-                        </div>
-                    </section>
-                    <section class="seccion-principal">
-                        <div class="img">
-
-                        </div>
-                        <div class="informacion">
-                            <h2 id="usuario">Nombre del usuario</h2>
-                        </div>
-                        <div class="publicacion">
-                            <p>Mostrando publicación</p>
-                        </div>
-                        <div class="botones">
-                            <input type="button" value="Comentar publicacion" name="comentar" onclick="location.href='#'">
-                            <input type="button" value="Escuchar cancion" name="escuchar" onclick="location.href='#'">
-                        </div>
-                    </section>
-                    <section class="seccion-principal">
-                        <div class="img">
-
-                        </div>
-                        <div class="informacion">
-                            <h2 id="usuario">Nombre del usuario</h2>
-                        </div>
-                        <div class="publicacion">
-                            <p>Mostrando publicación</p>
-                        </div>
-                        <div class="botones">
-                            <input type="button" value="Comentar publicacion" name="comentar" onclick="location.href='#'">
-                            <input type="button" value="Escuchar cancion" name="escuchar" onclick="location.href='#'">
-                        </div>
-                    </section>
-                    <section class="seccion-principal">
-                        <div class="img">
-
-                        </div>
-                        <div class="informacion">
-                            <h2 id="usuario">Nombre del usuario</h2>
-                        </div>
-                        <div class="publicacion">
-                            <p>Mostrando publicación</p>
-                        </div>
-                        <div class="botones">
-                            <input type="button" value="Comentar publicacion" name="comentar" onclick="location.href='#'">
-                            <input type="button" value="Escuchar cancion" name="escuchar" onclick="location.href='#'">
-                        </div>
-                    </section>
-                    <section class="seccion-principal">
-                        <div class="img">
-
-                        </div>
-                        <div class="informacion">
-                            <h2 id="usuario">Nombre del usuario</h2>
-                        </div>
-                        <div class="publicacion">
-                            <p>Mostrando publicación</p>
-                        </div>
-                        <div class="botones">
-                            <input type="button" value="Comentar publicacion" name="comentar" onclick="location.href='#'">
-                            <input type="button" value="Escuchar cancion" name="escuchar" onclick="location.href='#'">
-                        </div>
-                    </section>
-                    <section class="seccion-principal">
-                        <div class="img">
-
-                        </div>
-                        <div class="informacion">
-                            <h2 id="usuario">Nombre del usuario</h2>
-                        </div>
-                        <div class="publicacion">
-                            <p>Mostrando publicación</p>
-                        </div>
-                        <div class="botones">
-                            <input type="button" value="Comentar publicacion" name="comentar" onclick="location.href='#'">
-                            <input type="button" value="Escuchar cancion" name="escuchar" onclick="location.href='#'">
-                        </div>
-                    </section>
-
-                    <!--BORRAR-->
-                </main>
-            </div>
-            <div class="Interes">
-                <aside class="seccion-secundaria">
-                    <div class="amigos">
-                        <div class="buscadorF">
-                            <div class="SearchDiv">
-                                <input id="Search-Friends" type="text" style="outline: none;" placeholder="Buscar amigos">
-                                <button id="BuscarAmigosBoton"><img src="../../assets/img/tools/baseline_search_black_18dp.png"
-                                        alt=""></button>
-                            </div>
-                            <hr>
-                            <br>
-                        </div>
-                        <div class="slider">
-                            <div class="slide-track">
-                                <div class="slide">
-                                    <a href=""><img src="http://ultimafoto.info/wp-content/uploads/2017/01/testamento-augusto-pinochet-300x300.jpg"
-                                            alt=""></a>
-                                </div>
-                                <div class="slide">
-                                    <a href=""><img src="https://static.tvtropes.org/pmwiki/pub/images/lex_luthor_justice_league.jpg"
-                                            alt=""></a>
-                                </div>
-                                <div class="slide">
-                                    <a href=""><img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE4MDAzNDEwNDY4Mzc0MDMw/george-w-bush-9232768-1-402.jpg"
-                                            alt=""></a>
-                                </div>
-                                <div class="slide">
-                                    <a href=""><img src="https://www.birthdaycelebs.com/wp-content/uploads/people/frank-filthy-image.jpg"
-                                            alt=""></a>
-                                </div>
-                                <div class="slide">
-                                    <a href=""><img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTUyMjgxNzQwMDkyNjQ2ODk2/gettyimages-888179100_luis-fonsi.jpg"
-                                            alt=""></a>
-                                </div>
-                                <div class="slide">
-                                    <a href=""><img src="data:image/jpeg;base64,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"
-                                            alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <a aria-label="Siguiente" href="#" class="Mover" role="button"><img src="../../assets/img/tools/baseline_keyboard_arrow_right_black_18dp.png"
-                                alt="arrow" id="arrowR"></a>
-                        <br>
-                    </div>
-                    <section class="canciones">
-                        <h2 class="songs" style="font-weight:normal;">Playlist de canciones</h2>
-                        <ul class="playlist">
-                            <li><a href="#">Canción1</a></li>
-                            <li><a href="#">Canción2</a></li>
-                            <li><a href="#">Canción3</a></li>
-                            <li><a href="#">Canción4</a></li>
-                            <li><a href="#">Canción5</a></li>
-                        </ul>
-                    </section>
-                    <section class="foros">
-                        <h2 class="lista-foro">Foros suscritos</h2>
-                        <ul class="suscripciones">
-                            <li id="foro"><a href="">Foro 1</a></li>
-                            <li id="foro"><a href="">Foro 2</a></li>
-                            <li id="foro"><a href="">Foro 3</a></li>
-                            <li id="foro"><a href="">Foro 4</a></li>
-                        </ul>
-                    </section>
-                </aside>
-            </div>
-        </div>
-        <footer>
-            <div class="footer">
-                <ul class="footer">
-                    <li id="Fitem-logo"><img src="../../assets/img/logo/logo.png" alt="Sentio Logo"></li>
-                    <li id="Fitem"><a href="#">Legal</a></li>
-                    <li id="Fitem"><a href="#">Centro de privacidad</a></li>
-                    <li id="Fitem"><a href="#">Sobre nosotros</a></li>
-                    <li id="Fitem"><a href="#">Política de privacidad</a></li>
-                    <li id="Fitem"><a href="#">Centro de ayuda</a></li>
-                    <li id="FitemR">© 2018 Sentio SV</li>
-                </ul>
-            </div>
-        </footer>
     </div>
+           
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
+
 
 </html>
