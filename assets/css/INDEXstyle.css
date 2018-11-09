@@ -187,6 +187,19 @@ footer>div>a{
 h2.encabezado{
     font-family: 'Raleway', sans-serif;
 }
+
+iframe{
+    width: 282px;
+    height: 404px;
+    border-style: none;
+}
+
+iframe .scroll{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+}
+
 @media only screen and (max-width:600px){
     *{
         overflow: scroll;

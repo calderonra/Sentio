@@ -1,4 +1,4 @@
-* {
+#player {
     margin: 0;
     padding: 0;
 }
@@ -7,17 +7,17 @@ body {
     font-family:'Helvetica';
 }
 #player {
-    width: 400px;
-    height: 500px;
+    width: 280px;
+    height: 400px;
     position: absolute;
-    top: 50%; left: 50%;
+    top: 50%; left: 71%;
     margin-left: -200px;
     margin-top: -200px;
     /*border-radius: 50%;*/
     border: 1px solid #D0D0D0;
 }
 #player .cover {
-    width: 400px;
+    width: 280px;
     position: absolute;
     top: 0;
     left:0;
@@ -36,7 +36,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 400px;
+    width: 280px;
     height: 115px;
     background-color: #FFF;
 }
@@ -77,6 +77,7 @@ body {
     background: #00CC99;
     cursor: pointer;
 }
+/*
 #handler {
     position: absolute;
     width: 20px;
@@ -89,7 +90,7 @@ body {
     border-radius: 50%;
     cursor: pointer;
     z-index: 5;
-}
+}*/
 .nav {
     width: 50px;
     height: 50px;
@@ -117,3 +118,4 @@ body {
 #next {
     padding-left: 4px;
 }
+
