@@ -13,7 +13,7 @@
 <body>
     <div class="container">
 
-        <form id="signup">
+        <form action="#" id="signup" method="POST" onsubmit="return validar();">
 
             <div class="header">
 
@@ -26,28 +26,29 @@
             <div class="sep"></div>
 
             <div class="inputs">
-                <input type="text" placeholder="nombre">
-                <input type="email" placeholder="e-mail" autofocus />
+                <input type="text" id="nombre" placeholder="nombre" required>
+                <input type="email" id="e-mail" placeholder="e-mail" autofocus required/>
 
-                <input type="password" placeholder="contrasena" />
+                <input type="password" id="contrasena" placeholder="contrasena" required />
                 <label for="birthday">Fecha de nacimiento </label>
-                <input type="date" name="birthday" value="1969-04-20" />
+                <input type="date" id="birthday" name="birthday" value="1969-04-20" required/>
                 <label for="music">Musica favorita </label>
-                <textarea rows="4" cols="50" placeholder="cuentanos cuales son tus gustos musicales">
+                <textarea rows="4" cols="50" id="cuentanos" placeholder="cuentanos cuales son tus gustos musicales">
                     </textarea>
                 
                 <div class="checkboxy">
-                    <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">I accept the terms
+                    <input name="cecky" id="checky" value="1" type="checkbox" required/><label class="terms">I accept the terms
                         of use</label>
                 </div>
 
-                <a id="submit" href="../Inicio/inicio.html">Registrate a SENTIO </a>
+                <input type="submit" id="submit" value="Registrar">
 
             </div>
 
         </form>
 
     </div>
+    <script src="validacion.js"></script>
 </body>
 
 </html>
