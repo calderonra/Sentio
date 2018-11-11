@@ -24,7 +24,7 @@ body {
   
   .sidebar-sticky {
     position: relative;
-    top: 60px;
+    top: 70px;
     height: calc(100vh - 48px);
     padding-top: .5rem;
     overflow-x: hidden;
