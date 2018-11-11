@@ -1,6 +1,6 @@
-# Read Me Template
+# Sentio
 
-![Sentio's Logo](assets/img/logo/simple banner.png)
+![Sentio's Logo]("assets/img/logo/simple banner.png")
 
 > Feel the music, enjoy the moments.
 
@@ -18,12 +18,15 @@
 
 ## Description
 
-    Sentio es una red social de música, el objetivo de esta red social es que se pueda ver las canciones que los amigos de los usuarios están escuchando, y que esos estados de canciones que se están mostrando se puedan comentar y dejar voto positivo o voto negativo, luego en el perfil del usuario que se muestren los artistas más escuchados y las canciones más escuchadas, luego otra cosa que se podrá hacer es hacer discusiones sobre temas relacionados con la música donde todos podrán contribuir en un foro.
-	La red social está pensada para tener tres partes principales un perfil de usuario, un menú de inicio éste será como la parte principal de la página donde la información de la canción que está escuchando cada uno de los contactos de los usuarios y se mostrará una tarjeta, en esta estará la información de lo que está escuchando, en la parte superior de la página habrá un reproductor de música y en otra parte de la página es donde estará el espacio para el foro; que será donde los usuarios puedan hablar temas de musica y cosas relacionadas. Luego en la esquina superior derecha habrá un menú desplegable en el cual podremos ver la configuraciones, el menú de ayuda y otras herramientas. 
-    Con respecto al foro se tiene pensado que haya un header que se mantenga tanto como en el inicio del foro como en los post abiertos, luego en el menú principal del foro estarán todas las discusiones disponibles para comentar en caja luego cuando se haga click en la caja, se podrá entrar al post y se verá la publicación y el usuario la podrá comentar.
-    El perfil tendrá una foto del usuario, una foto de portada que será de su banda favorita, también se mostrará un listado de sus canciones más escuchadas y sus artistas más escuchados. En la parte inferior se podrán ver los post que ha estado comentando últimamente.
+ Sentio es una red social de música, el objetivo de esta red social es que se pueda ver las canciones que los amigos de los usuarios están escuchando, y que esos estados de canciones que se están mostrando se puedan comentar y dejar voto positivo o voto negativo, luego en el perfil del usuario que se muestren los artistas más escuchados y las canciones más escuchadas, luego otra cosa que se podrá hacer es hacer discusiones sobre temas relacionados con la música donde todos podrán contribuir en un foro.
 
+La red social está pensada para tener tres partes principales un perfil de usuario, un menú de inicio éste será como la parte principal de la página donde la información de la canción que está escuchando cada uno de los contactos de los usuarios y se mostrará una tarjeta, en esta estará la información de lo que está escuchando, en la parte superior de la página habrá un reproductor de música y en otra parte de la página es donde estará el espacio para el foro; que será donde los usuarios puedan hablar temas de musica y cosas relacionadas. Luego en la esquina superior derecha habrá un menú desplegable en el cual podremos ver la configuraciones, el menú de ayuda y otras herramientas. 
 
+Con respecto al foro se tiene pensado que haya un header que se mantenga tanto como en el inicio del foro como en los post abiertos, luego en el menú principal del foro estarán todas las discusiones disponibles para comentar en caja luego cuando se haga click en la caja, se podrá entrar al post y se verá la publicación y el usuario la podrá comentar.
+
+El perfil tendrá una foto del usuario, una foto de portada que será de su banda favorita, también se mostrará un listado de sus canciones más escuchadas y sus artistas más escuchados. En la parte inferior se podrán ver los post que ha estado comentando últimamente.
+
+---
 #### Technologies & Frameworks
 
 - Bootstrap
