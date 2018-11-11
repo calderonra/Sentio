@@ -17,7 +17,7 @@
 </head>
 
 <body style="background-color:#d1e2ec">
-    <nav class="navbar navbar-expand-md sticky-top" style="background-color:#040C22; box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.5); padding-top: 0; padding-bottom: 0">
+    <nav class="navbar navbar-expand-md sticky-top" style="background-color:#040C22; box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.5);">
         <a class="navbar-brand"><img src="../../assets/img/logo/simple banner.png" alt="Sentio's logo" width="190vw"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target"
             aria-controls="collapse_target" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgb(166, 177, 193,0.5)">
@@ -26,10 +26,10 @@
         <div class="collapse navbar-collapse" id="collapse_target">
             <ul class="navbar-nav ml-md-auto">
                 <li class="nav-item">
-                    <img class="" src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NDg0MDU0NzYwMjI4MzY3/usa---violence---dylan-klebold.jpg"
+                    <img class="d-flex justify-content-between align-items-center" src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NDg0MDU0NzYwMjI4MzY3/usa---violence---dylan-klebold.jpg"
                         width="42" height="42" style="border-radius: 50%"></li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link" style="cursor: default;">Dylan Klebold</a></li>
+                    <a href="#" class="nav-link sidebar-heading text-muted" style="cursor: default;">Dylan Klebold</a></li>
                 <li class="nav-item">
                     <a href="../Profile/perfil.html" class="btn btn-outline-primary">Mi perfil</a>
                 </li>
@@ -234,36 +234,70 @@
                     </div>
                 </div>
             </section>
-            <div class="col-md-3">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">Mis
-                                    amigos conectados</a>
-                            </li>
-                            <li class="nav-item">
-                                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                                    <span>Lista de reproducción</span>
-                                </h6>
-                                <ul class="playlist">
-                                    <li><a href="#">Canción1</a></li>
-                                    <li><a href="#">Canción2</a></li>
-                                    <li><a href="#">Canción3</a></li>
-                                    <li><a href="#">Canción4</a></li>
-                                    <li><a href="#">Canción5</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                                    <span>Mis foros</span>
-                                </h6>
-                                <ul class="playlist">
-                                    <li><a href="#">Foro 1</a></li>
-                                    <li><a href="#">Foro 2</a></li>
-                                    <li><a href="#">Foro 3</a></li>
-                                    <li><a href="#">Foro 4</a></li>
-                                </ul>
-                            </li>
+            <div class="col-md-3" style="background-color:white">
+                <ul class="navbar-nav mr-auto sidebar-sticky">
+                    <li class="nav-item">
+                        <a class="nav-link sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">Mis
+                            amigos conectados</a>
+                        <div class="slider">
+                            <div class="slide-track">
+                                <div class="slide">
+                                    <a href=""><img src="http://ultimafoto.info/wp-content/uploads/2017/01/testamento-augusto-pinochet-300x300.jpg"
+                                            alt=""></a>
+                                </div>
+                                <div class="slide">
+                                    <a href=""><img src="https://static.tvtropes.org/pmwiki/pub/images/lex_luthor_justice_league.jpg"
+                                            alt=""></a>
+                                </div>
+                                <div class="slide">
+                                    <a href=""><img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE4MDAzNDEwNDY4Mzc0MDMw/george-w-bush-9232768-1-402.jpg"
+                                            alt=""></a>
+                                </div>
+                                <div class="slide">
+                                    <a href=""><img src="https://www.birthdaycelebs.com/wp-content/uploads/people/frank-filthy-image.jpg"
+                                            alt=""></a>
+                                </div>
+                                <div class="slide">
+                                    <a href=""><img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTUyMjgxNzQwMDkyNjQ2ODk2/gettyimages-888179100_luis-fonsi.jpg"
+                                            alt=""></a>
+                                </div>
+                                <div class="slide">
+                                    <a href=""><img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE4MDAzNDEwNzg5ODI4MTEw/barack-obama-12782369-1-402.jpg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                            <span>Lista de reproducción</span>
+                        </h6>
+                        <ul class="playlist">
+                            <li><a href="#">Canción1</a></li>
+                            <li><a href="#">Canción2</a></li>
+                            <li><a href="#">Canción3</a></li>
+                            <li><a href="#">Canción4</a></li>
+                            <li><a href="#">Canción5</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                            <span>Mis foros</span>
+                        </h6>
+                        <ul class="playlist">
+                            <li><a href="#">Foro 1</a></li>
+                            <li><a href="#">Foro 2</a></li>
+                            <li><a href="#">Foro 3</a></li>
+                            <li><a href="#">Foro 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><br>
+                        <div class="dropdown-divider"></div>
+                        <a class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1" href="#">
+                            <span>Volver arriba</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </main>
         <hr>
