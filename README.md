@@ -1,6 +1,8 @@
 # Sentio
-
-![Sentio's Logo]("assets/img/logo/simple banner.png")
+<p align="center">
+<a href="#">
+<img src="../../assets/img/logo/simple banner.png" alt="Sentio's logo" width="190vw"></a>
+</p>
 
 > Feel the music, enjoy the moments.
 
