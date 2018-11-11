@@ -12,6 +12,13 @@ body {
    * Sidebar
    */
   
+   .sidebar-more{
+    position: fixed;
+   }
+   .sticky-aside{
+       position: relative;
+   }
+
   .sidebar {
     position: fixed;
     top: 0;
