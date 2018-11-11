@@ -101,7 +101,11 @@ body {
 
 
 
-
+.bg-i{
+  background-image: url(../img/The-Resistance-muse-31689813-1920-1080.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
   .slide-track{
     display: flex;
 }
