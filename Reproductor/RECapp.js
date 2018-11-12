@@ -11,23 +11,23 @@ var current_track = 0;
 var song, audio, duration;
 var playing = false;
 var songs = [{
-    title: 'Descapcito',
+    title: 'Despacito',
     artist: 'Luis Fonsi ft. Daddy Yankee',
-    url: 'https://raw.githubusercontent.com/calderonra/Sentio/master/assets/tracks/Despacito.mp3?token=AjcXjK-5_x9ANETlCNFbDMom9mxAdEgMks5b6OsAwA%3D%3D',
+    url: 'https://raw.githubusercontent.com/fernandom721/Sentio_tracks/master/Despacito.mp3',
     art: 'https://www.buenamusica.com/media/fotos/discos/l/luis-fonsi/luis-fonsi_despacito.jpg'
 },
    
 {
     title: 'Macintosh Plus',
     artist: 'リサフランク420 / 現代のコンピュ',
-    url: 'https://github.com/calderonra/Sentio/blob/master/assets/tracks/Macintosh%20Plus.mp3?raw=true',
+    url: 'https://github.com/fernandom721/Sentio_tracks/blob/master/Macintosh%20Plus.mp3?raw=true',
     art: 'https://cdn.shopify.com/s/files/1/1090/5356/products/R-10960101-1507236505-5542_jpeg_300x300.jpg?v=1537323822'
 },
 
 {
     title: 'All Star',
     artist: 'Smash Mouth',
-    url: 'https://raw.githubusercontent.com/calderonra/Sentio/master/assets/tracks/All%20Star.mp3?token=AjcXjMkdS5T1UnKJzDQpWIv8PkmzOjlXks5b6PGjwA%3D%3D',
+    url: 'https://raw.githubusercontent.com/fernandom721/Sentio_tracks/master/All%20Star.mp3',
     art: 'https://upload.wikimedia.org/wikipedia/en/1/16/All_star.jpg'
 }];
 
