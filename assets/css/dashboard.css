@@ -171,10 +171,26 @@ ul.lista.col-md-12>li{
 }
 .profile-style{
   border-radius:50%;
+  width: 90%;
+  margin:0 auto;
 }
 .style-text{
   font-size: 150%;
   color: white;
   font-weight:normal;
   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+html {
+  scroll-behavior: smooth;
+}
+div.bg-i>a>img{
+  width: 15%;
+  display:flex;
+  margin:0 auto;
+}
+.friends{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 18%;
 }
