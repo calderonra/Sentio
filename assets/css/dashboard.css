@@ -194,3 +194,10 @@ div.bg-i>a>img{
   height: 50px;
   margin-left: 18%;
 }
+.menu-style-icona{
+  margin-left: 20px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  margin-top: 5px;
+}
