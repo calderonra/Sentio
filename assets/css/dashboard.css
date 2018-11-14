@@ -200,16 +200,49 @@ div.bg-i>a>img{
   margin-top: 5px;
 }
 #Imagen-bg{
-  background-image: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-169368.jpg);
+  background-image: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-169372.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
  }
 #form{
   margin-left: 10%;
   margin-top: 5%;
 }
-@media only screen and (max-width:600px){
-  #form{
-    margin-left: 0;
-  }
+.iframe2{
+  width: 235px;
+  height: 360px;
 }
+.footer{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  position: absolute;
+  bottom: -3px;
+  color: white;
+  width: 100%;
+  background-color: #031920;
+  padding-bottom: 2.5em;
+}
+div.footer{
+  padding-bottom: 1.3%;
+  text-align: center;
+}
+#cr{
+  color: gray;
+  font-size: 10px;
+}
+footer>div>a{
+  color: #0E7871;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+}
+@media only screen and (max-width:600px){
+  #Imagen-bg{
+    overflow-y: scroll;
+  }
+  .footer{
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+ }
