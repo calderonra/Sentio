@@ -1,0 +1,151 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
+    title Editar perfil | Sentio
+    link(rel='icon', type='image/png', href='../../assets/img/logo/icon.png')
+    link(href='../../assets/css/dashboard.css', rel='stylesheet')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.5.0/css/all.css', integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU', crossorigin='anonymous')
+  body
+    nav.navbar.navbar-expand-md.sticky-top.edit
+      a.navbar-brand
+        img(src='../../assets/img/logo/simple banner.png', alt="Sentio's logo", width='190vw')
+      button.navbar-toggler.bg-toogler(type='button', data-toggle='collapse', data-target='#collapse_target', aria-controls='collapse_target', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #collapse_target.collapse.navbar-collapse
+        ul.navbar-nav.ml-md-auto
+          li.nav-item
+            img.d-flex.justify-content-between.align-items-center.img-radius(src='https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NDg0MDU0NzYwMjI4MzY3/usa---violence---dylan-klebold.jpg', width='42', height='42')
+          li.nav-item
+            a.nav-link.sidebar-heading.text-muted.name-style(href='#') Dylan Klebold
+          li.nav-item
+            a.btn.btn-outline-primary(href='../Profile/profile.html') Mi perfil
+          li.nav-item
+            .btn-group
+              i.fas.fa-ellipsis-v.menu-style-icona(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              .dropdown-menu.dropdown-menu-right
+                a.dropdown-item(href='#') Regular link
+                a.dropdown-item(href='#') Active link
+                .dropdown-divider
+                a.dropdown-item(href='../../index.html') Cerrar Sesión
+    main.container
+      .d-flex.align-items-center.p-3.my-3.text-white-50.rounded.shadow-sm.bg-toogler
+        img.mr-3(src='../../assets/img/logo/logo.png', alt='', width='60', height='60')
+        .lh-100
+          h4.mb-0.text-white.lh-100 Sentio
+          h6 Since 2018
+      .my-3.p-3.bg-white.rounded.shadow-sm
+        h6.border-bottom.border-gray.pb-2.mb-0 Configuración general
+        .media.text-muted.pt-3
+          img.mr-2.rounded(data-src='holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1', alt='')
+          p.media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
+            strong.d-block.text-gray-dark Nombre de usuario
+            |           Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            |           condimentum nibh, ut fermentum massa justo sit amet risus.
+          small
+            a(href='#') Editar
+        .media.text-muted.pt-3
+          img.mr-2.rounded(data-src='holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1', alt='')
+          p.media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
+            strong.d-block.text-gray-dark Correo electrónico
+            |           Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            |           condimentum nibh, ut fermentum massa justo sit amet risus.
+          small
+            a(href='#') Editar
+        .media.text-muted.pt-3
+          img.mr-2.rounded(data-src='holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1', alt='')
+          p.media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
+            strong.d-block.text-gray-dark Contraseña
+            |           Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            |           condimentum nibh, ut fermentum massa justo sit amet risus.
+          small
+            a(href='#') Editar
+        small.d-block.text-right.mt-3
+          a(href='#') Ver Más
+      .my-3.p-3.bg-white.rounded.shadow-sm
+        h6.border-bottom.border-gray.pb-2.mb-0 Información de contacto
+        .media.text-muted.pt-3
+          img.mr-2.rounded(data-src='holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1', alt='')
+          .media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
+            .d-flex.justify-content-between.align-items-center.w-100
+              strong.text-gray-dark Dirección
+              a(href='#') Editar
+            span.d-block
+              | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta molestiae repellat ipsa
+              | libero doloribus atque iste nesciunt vitae quibusdam ipsam aliquam, beatae ratione quo eligendi quia
+              | voluptatem facilis sint cupiditate!
+        .media.text-muted.pt-3
+          img.mr-2.rounded(data-src='holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1', alt='')
+          .media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
+            .d-flex.justify-content-between.align-items-center.w-100
+              strong.text-gray-dark Número de teléfono
+              a(href='#') Editar
+            span.d-block
+        .media.text-muted.pt-3
+          img.mr-2.rounded(data-src='holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1', alt='')
+          .media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
+            .d-flex.justify-content-between.align-items-center.w-100
+              strong.text-gray-dark Género favorito
+              a(href='#') Editar
+            span.d-block
+              | Lorem ipsum dolor sit amet.
+        small.d-block.text-right.mt-3
+          a(href='#') Ver Más
+    .container
+      hr
+      footer.pt-4.my-md-5.pt-md-5.border-top
+        .row
+          .col-12.col-md
+            img.mb-2(src='../../assets/img/logo/logo.png', alt='', width='30', height='30')
+            small.d-block.mb-3.text-muted © Sentio-2018
+          .col-6.col-md
+            h5 Features
+            ul.list-unstyled.text-small
+              li
+                a.text-muted(href='#') Cool stuff
+              li
+                a.text-muted(href='#') Random feature
+              li
+                a.text-muted(href='#') Team feature
+              li
+                a.text-muted(href='#') Stuff for developers
+              li
+                a.text-muted(href='#') Another one
+              li
+                a.text-muted(href='#') Last time
+          .col-6.col-md
+            h5 Resources
+            ul.list-unstyled.text-small
+              li
+                a.text-muted(href='#') Resource
+              li
+                a.text-muted(href='#') Resource name
+              li
+                a.text-muted(href='#') Another resource
+              li
+                a.text-muted(href='#') Final resource
+          .col-6.col-md
+            h5 About
+            ul.list-unstyled.text-small
+              li
+                a.text-muted(href='#') Team
+              li
+                a.text-muted(href='#') Locations
+              li
+                a.text-muted(href='#') Privacy
+              li
+                a.text-muted(href='#') Terms
+    //
+      Bootstrap core JavaScript
+      ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script.
+      window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\\/script>')
+    script(src='../../assets/js/vendor/popper.min.js')
+    script(src='../../dist/js/bootstrap.min.js')
+    script(src='../../assets/js/vendor/holder.min.js')
+    script(src='offcanvas.js')

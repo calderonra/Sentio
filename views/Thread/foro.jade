@@ -1,0 +1,58 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Lista de foros
+    link(rel='icon', type='image/png', href='../../assets/img/logo/icon.png')
+  body
+    .contenedor
+      header.header
+        .icono
+          h1.logo logo
+        .reproductor
+        .perfil
+          .img-perfil
+          .nombre
+            h2#name Nombre del usuario
+          .boton-perfil
+            input(type='button', value='Perfil', onclick="location.href='#'")
+      nav.nav
+        ul.lista
+          li
+            a(href='#') Inicio
+          li
+            a(href='#') Notificaciones
+          li
+            a(href='#') Mensajes
+          li
+            a(href='#') Buscador
+      main.main
+        section.seccion-principal
+          table.discusiones
+            tbody
+              tr.fila
+                th.encabezado Nombre del foro
+                th.encabezado Total de discusiones
+              tr.filas
+                td.celdas
+        aside.seccion-secundaria
+          .amigos
+            input(type='button', value='Amigos conectados', onclick="location.href='#'")
+          section.canciones
+            h2.sons Playlist de canciones
+            ul.playlist
+              li
+                a(href='#') Canción1
+              li
+                a(href='#') Canción2
+              li
+                a(href='#') Canción3
+              li
+                a(href='#') Canción4
+              li
+                a(href='#') Canción5
+          section.foros
+            h2.lista-foro Foros suscritos
+            ul.suscripciones
