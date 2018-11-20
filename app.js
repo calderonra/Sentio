@@ -5,6 +5,8 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -13,6 +15,12 @@ const MongoStore = require('connect-mongo')(session);
 //Credenciales de nuestra base de datos
 const { mongodb } = require('./configs/keys');
 const session = require('express-session');
+//coneccion 
+mongoose.Promise=global.Promise;
+mongoose.connect('mongodb://localhost/sentio')
+    .then(()=>console.log('mongoose se conecto'));
+    
+
 
 
 var app = express();
@@ -39,8 +47,10 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
+
 app.use(express.static(path.join(__dirname, 'public')));
-//app.use(express.static(path.join(__dirname, 'views')));
+///
+app.use('css',express.static(path.join(__dirname, 'views')));
 
 app.use('/', routes);
 app.use('/users', users);
