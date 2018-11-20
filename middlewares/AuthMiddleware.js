@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 const AuthMiddleware = {};
  
  
-=======
- const AuthMiddleware={};
->>>>>>> 0861f3b4c60d2055a32f59530a48eaeb40fa9548
  //middleware que verifica si una persona esta logueada
  AuthMiddleware.isAuthentication = function (req, res, next) {
     if(!req.session.user) // verificamos is existe la session
