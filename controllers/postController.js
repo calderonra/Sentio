@@ -1,0 +1,40 @@
+
+//probar en postman
+
+const mongoose = require('mongoose'),
+    postModel=require('../models/post')
+
+const PostController={
+};
+
+PostController.create=function(req,res){
+    res.json({
+        okay=true
+    });
+    //codigo de obtener datos de la peticion 
+    let data={
+        nombre:req.body.nombre,
+        autor:req.body.autor
+    }
+    //validar valores 
+    if(data.nombre && data.autor && data.nombre !='' && data.autor ){
+
+    }else{
+        res.status(400);
+        res.jason({err:{code:400,message:'faltan datos'}});
+    }
+    //crear un objeto post
+    let nuevoPost= new postModel(data);
+    nuevoPost.save(function (err) {
+        if(err){
+            res.status(500);
+        }
+    })
+    //guardar en la base de datos 
+};
+
+
+PostController.read=function(req,res){
+    //obtener todos los post de la base de datos y enviarlos como respuesta json
+};
+module.exports=PostController;
