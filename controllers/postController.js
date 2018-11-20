@@ -28,10 +28,13 @@ PostController.create=function(req,res){
     nuevoPost.save(function (err) {
         if(err){
             res.status(500);
+        }else{
+            res.json({ok:true,message:'se guardo con exito'})
         }
     })
     //guardar en la base de datos 
 };
+
 
 
 PostController.read=function(req,res){
