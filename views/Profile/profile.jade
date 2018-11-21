@@ -9,12 +9,12 @@ html(lang='en')
     link(href='https://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet')
     link(href='https://fonts.googleapis.com/css?family=Oswald', rel='stylesheet')
     link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
-    link(href='../../assets/css/dashboard.css', rel='stylesheet')
+    link(href='/stylesheets/dashboard.css', rel='stylesheet')
     link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.5.0/css/all.css', integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU', crossorigin='anonymous')
   body
     nav.navbar.navbar-expand-md.sticky-top
       a.navbar-brand(href='../Inicio/inicio.html')
-        img(src='../../assets/img/logo/simple banner.png', alt="Sentio's logo", width='190vw', title='Inicio')
+        img(src='/images/logo/simple banner.png', alt="Sentio's logo", width='190vw', title='Inicio')
       button.navbar-toggler.bg-toogler(type='button', data-toggle='collapse', data-target='#collapse_target', aria-controls='collapse_target', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
       #collapse_target.collapse.navbar-collapse
@@ -44,7 +44,7 @@ html(lang='en')
           br
           p.text-center.style-text Dylan Klebold
           a(href='#content')
-            img.center-block(src='../../assets/img/tools/baseline_expand_more_black_18dp.png', alt='')
+            img.center-block(src='/images/tools/baseline_expand_more_black_18dp.png', alt='')
           br
           br
           br
@@ -219,7 +219,7 @@ html(lang='en')
       footer.pt-4.my-md-5.pt-md-5.border-top
         .row
           .col-12.col-md
-            img.mb-2(src='../../assets/img/logo/logo.png', alt='', width='30', height='30')
+            img.mb-2(src='/images/logo/logo.png', alt='', width='30', height='30')
             small.d-block.mb-3.text-muted © Sentio-2018
           .col-6.col-md
             h5 Features
