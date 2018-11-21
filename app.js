@@ -27,6 +27,8 @@ var app = express();
 
 require('./configs/database');
 
+
+
 // view engine setup
 app.use(session({
     secret:"Hello World!!!",
@@ -54,6 +56,33 @@ app.use('public',express.static(path.join(__dirname, 'views')));
 
 app.use('/', routes);
 app.use('/users', users);
+
+app.post('/index',function(res,req){
+    console.log("vale")
+    var username = req.body.password;
+
+    new username({username:email}).fetch().then(function(found){
+        if(found){
+            console.log("Encontrado");
+            
+            bcrypt.compare(addEventListener, found.get('contrasenia'), function(err,res){
+                if(res){
+                    req.session.regenerate(function(){
+                        console.log("NIce");
+                        res.redirect('/Inicio/inicio')
+                        req.session.found = found.username;
+                    });
+                } else{
+                    console.log("nel");
+                    res.redirect('/index')
+                }
+            })
+        } else{
+            console.log("-.-")
+            res.redirect('/index');
+        }
+    })
+});
 
 /// catch 404 and forwarding to error handler
 app.use(function (req, res, next) {

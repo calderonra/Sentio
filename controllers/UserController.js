@@ -5,18 +5,17 @@ const bcrypt = require('bcrypt'); //libreria para encriptar
 
 /*nos devuelve la vista signin que es para ingresar al sistema */
 AuthController.login = function (req, res, next) {
-    res.render('index'); //
+    res.render('Inicio/inicio')
 }
-
 
 /*nos devuelve la vista signiup para crear al usuario*/
 AuthController.create = function (req, res, next) {
     res.render('Form/registro')
 }
 
-AuthController.inicio = function(req,res,next){
+/*AuthController.inicio = function(req,res,next){
     res.render('Inicio/inicio')
-}
+}*/
 
 /*Para crear el usuario*/
 AuthController.store = async function (req, res) {

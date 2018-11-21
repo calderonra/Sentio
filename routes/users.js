@@ -12,12 +12,16 @@ router.get('/', function (req, res) {
   res.send('respond with a resource');
 });
 
-router.get('/inicio',AuthController.inicio);
+//router.get('/inicio',AuthController.inicio);
+
+router.get('/inicio', AuthController.login);
+
 //ruta que nos devolvera el formulario para crear usuarios
 router.get('/registro', AuthController.create);
 //ruta que enviara los datos del usuario para almacenarlos en la base de datos
 router.post('/registro', AuthController.store);
 //ruta que nos devolvera el formulario para ingresar
+router.get('/')
 //router.get('/signin', AuthController.login);
 //ruta que enviara los datos del usuario para ingresar al sistema
 //router.post('/signin', AuthController.signin);
@@ -27,7 +31,5 @@ router.post('/registro', AuthController.store);
 router.use(AuthMiddleware.isAuthentication);
 //ruta para acceder al perifl
 router.get('/profile', AuthController.profile);
-module.exports = router;
-
 module.exports = router;
 
