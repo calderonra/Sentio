@@ -20,14 +20,14 @@ html(lang='en')
       #collapse_target.collapse.navbar-collapse
         ul.navbar-nav.ml-md-auto
           li.nav-item
-            a.btn.btn-outline-success.btn-lg(href='/users/registro') Registrarse
+            a.btn.btn-outline-success.btn-lg(href='/users/inicio') Registrarse
     br
     br
     .container
       .main.row.text-center
         .col-md-4
           .text-center
-            form.form-signin(method='POST' action='')
+            form.form-signin(method='POST' action='/users/index')
               h1.h3.mb-3.font-weight-normal Inicia sesión
               label.sr-only(for='inputEmail') Email address
               input#inputEmail.form-control(type='email', placeholder='Email address', required='', autofocus='', name='correo')
@@ -37,7 +37,7 @@ html(lang='en')
                 label
                   input(type='checkbox', value='remember-me')
                   |  Remember me
-              a.btn.btn-lg.btn-primary.btn-block(href='/Inicio/inicio', type='submit') Sign in
+              a.btn.btn-lg.btn-primary.btn-block(href='/users/inicio', type='submit') Sign in
               br
               br
               br
@@ -55,6 +55,7 @@ html(lang='en')
         a(href='#') Información de contacto
         a(href='#') Ayuda
         h5#cr © 2018 Sentio
+    script(src="/javascripts/BotonPost.js")
     script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
     script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy', crossorigin='anonymous')

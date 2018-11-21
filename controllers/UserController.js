@@ -5,8 +5,9 @@ const bcrypt = require('bcrypt'); //libreria para encriptar
 
 /*nos devuelve la vista signin que es para ingresar al sistema */
 AuthController.login = function (req, res, next) {
-    res.render('Inicio/inicio')
+    res.render('index')
 }
+
 
 /*nos devuelve la vista signiup para crear al usuario*/
 AuthController.create = function (req, res, next) {
@@ -16,6 +17,8 @@ AuthController.create = function (req, res, next) {
 /*AuthController.inicio = function(req,res,next){
     res.render('Inicio/inicio')
 }*/
+
+
 
 /*Para crear el usuario*/
 AuthController.store = async function (req, res) {
@@ -62,6 +65,30 @@ AuthController.store = async function (req, res) {
 
 };
 
+AuthController.signin = function(req,res,next){
+    var data = {};
+    User.authenticate(req.body.email,req.body.password,(error,user)=>{
+        if(error || !user){
+            res.render('index',{err: error, email: req.body.email});
+        } else{
+            data.userId = user._id.toString(),
+            data.email = user.email,
+            data.password = user.password
+
+            bcrypt.hash(data.userId,10,function(err,hash){
+                if(err){
+                    next(err);
+                }
+                data.userId = hash;
+
+                req.session.user = JSON.stringify(data);
+                console.log('TORTY SE LA COME');
+                return res.redirect('/users/inicio');
+                
+            });
+        }
+    });
+};
 
 /*nos dirigira al perfil */
 AuthController.profile = function (req, res) {

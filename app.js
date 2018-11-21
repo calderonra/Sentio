@@ -56,7 +56,7 @@ app.use('public',express.static(path.join(__dirname, 'views')));
 
 app.use('/', routes);
 app.use('/users', users);
-
+/*
 app.post('/index',function(res,req){
     console.log("vale")
     var username = req.body.password;
@@ -82,7 +82,7 @@ app.post('/index',function(res,req){
             res.redirect('/index');
         }
     })
-});
+});*/
 
 /// catch 404 and forwarding to error handler
 app.use(function (req, res, next) {
