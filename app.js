@@ -6,7 +6,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-
+const session = require('express-session');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -14,7 +14,7 @@ var users = require('./routes/users');
 const MongoStore = require('connect-mongo')(session);
 //Credenciales de nuestra base de datos
 const { mongodb } = require('./configs/keys');
-const session = require('express-session');
+
 //coneccion 
 mongoose.Promise=global.Promise;
 mongoose.connect('mongodb://localhost/sentio')
