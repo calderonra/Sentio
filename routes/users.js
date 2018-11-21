@@ -12,7 +12,7 @@ router.get('/', function (req, res) {
   res.send('respond with a resource');
 });
 
-router.get('/inicio'.AuthController.inicio);
+router.get('/inicio',AuthController.inicio);
 //ruta que nos devolvera el formulario para crear usuarios
 router.get('/registro', AuthController.create);
 //ruta que enviara los datos del usuario para almacenarlos en la base de datos

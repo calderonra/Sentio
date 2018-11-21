@@ -4,8 +4,11 @@ const bcrypt = require('bcrypt'); // Para encriptar contraseñas
 const { Schema } = mongoose; //Objeto Schema para realizar diferentes operaciones
 const UserSchema = new Schema({
     //atributos con sus validaciones
+    name: {type: String,required: true},
     email: { type: String, required: true, unique: true },
-    password: { type: String, required: true }
+    password: { type: String, required: true },
+    birth: {type: String, required:true},
+    description: {type: String}
 });
 
 UserSchema.statics.authenticate = function (email, password, callback) {

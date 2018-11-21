@@ -22,9 +22,13 @@ AuthController.inicio = function(req,res,next){
 AuthController.store = async function (req, res) {
     //obteniendo los datos del usuario
     let user = {
+        name: req.body.name,
         email: req.body.email,
-        password: req.body.password
+        password: req.body.password,
+        birth: req.body.birth,
+        description: req.body.description
     }
+    console.log(user);
     /*alamcenando el usuario*/
     await User.create(user, (error, user) => {
         if (error) // si se produce algun error
@@ -34,8 +38,11 @@ AuthController.store = async function (req, res) {
             //Almacenamos los datos de la consulta en el objeto data
             let data = {
                 userId: user._id.toString(),
+                name: user.name,
                 email: user.email,
-                password: user.password
+                password: user.password,
+                birth: user.birth,
+                description: user.description
             }
             //hash es el mé que nos permite encriptar el password
             //con 10 le indicamos cuantas veces realizara la encriptación
@@ -49,7 +56,7 @@ AuthController.store = async function (req, res) {
                 req.session.user = JSON.stringify(data);
                 console.log(req.session.user);
                 //nos dirigira a la pagina donde se encuentra el perfil del usuario
-                return res.redirect('/Profile/profile');
+                return res.redirect('/users/profile');
             });
         }
     })
@@ -59,7 +66,7 @@ AuthController.store = async function (req, res) {
 
 /*nos dirigira al perfil */
 AuthController.profile = function (req, res) {
-    return res.render('profile');
+    return res.render('Profile/profile');
 }
 
 AuthController.logout = function (req, res, next) {

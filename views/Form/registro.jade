@@ -5,23 +5,23 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
     title Crea tu cuenta de Sentio
-    link(rel='icon', type='image/png', href='../../assets/img/logo/icon.png')
-    link(rel='stylesheet', href='../../public/stylesheets/FORMstyle.css')
+    link(rel='icon', type='image/png', href='/images/logo/icon.png')
+    link(rel='stylesheet', href='/stylesheets/FORMstyle.css')
   body
     .container
-      form#signup(action='#', method='POST', onsubmit='return validar();')
+      form#signup(action='/users/registro', method='POST', onsubmit='return validar();')
         .header
           h1 Registro
           p Introduce tus datos a continuacion
         .sep
         .inputs
-          input#nombre(type='text', placeholder='nombre', required='')
-          input#e-mail(type='email', placeholder='e-mail', autofocus='', required='')
-          input#contrasena(type='password', placeholder='contrasena', required='')
+          input#nombre(type='text', placeholder='nombre', required='', name='name')
+          input#e-mail(type='email', placeholder='e-mail', autofocus='', required='', name='email')
+          input#contrasena(type='password', placeholder='contrasena', required='', name='password')
           label(for='birthday') Fecha de nacimiento 
-          input#birthday(type='date', name='birthday', value='1969-04-20', required='')
+          input#birthday(type='date', value='1969-04-20', required='', name='birth')
           label(for='music') Musica favorita 
-          textarea#cuentanos(rows='4', cols='50', placeholder='cuentanos cuales son tus gustos musicales')                     
+          textarea#cuentanos(rows='4', cols='50', placeholder='cuentanos cuales son tus gustos musicales', name='description')                     
           .checkboxy
             input#checky(name='cecky', value='1', type='checkbox', required='')
             label.terms
