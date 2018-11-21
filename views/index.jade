@@ -47,7 +47,23 @@ html(lang='en')
             .canciones
               .top
                 h2.encabezado LAS 3 MÁS ESCUCHADAS
-              include Reproductor
+              div#player
+                img#art.cover(src='')
+                .trackinfo
+                  p#title
+                  p#artist
+                #track
+                  #progress
+                  #handler
+                .container
+                  .info
+                    .cont
+                      button#prev.nav
+                        i.fas.fa-backward
+                      button#play.nav
+                        i.fas.fa-play
+                      button#next.nav
+                        i.fas.fa-forward
       // /.row
     footer.footer
       .footer

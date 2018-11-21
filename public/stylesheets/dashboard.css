@@ -242,7 +242,129 @@ footer>div>a{
   }
   .footer{
     display: flex;
-    position: relative;
+    position: absolute;
     justify-content: center;
   }
  }
+
+ #player {
+    margin: 0;
+    padding: 0;
+}
+#player body {
+    background-color: #F4F4F4;
+    font-family:'Helvetica';
+}
+#player {
+    margin-left: 32%;
+    width: 230px;
+    height: 355px;
+    position: absolute;
+}
+#player .cover {
+    width: 230px;
+    position: absolute;
+    top: 0;
+    left:0;
+    /*border-radius: 50%;*/
+}
+#player .container {
+    width: 100%;
+    height: 100%;
+    /*border-radius: 50%;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+#player .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 230px;
+    height: 125px;
+    background-color: #FFF;
+}
+#player .info .cont {
+    margin-left: 15px;
+    display: flex;
+    text-align: center;
+    padding-top: 40px;
+}
+#player .info .cont .nav{
+    padding-left: 15px;
+}
+#player .trackinfo {
+    position: absolute;
+    bottom: 115px;
+    color: #FFF;
+}
+#player .trackinfo p {
+    text-shadow: 0px 0px 5px #333;
+}
+#player .trackinfo #title {
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: -15px;
+}
+#player .trackinfo #artist {
+    padding-left: 10px;
+}
+#track {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    background-color: #A6A7A9;
+    bottom: 115px;
+    z-index: 10;
+    cursor: pointer;
+}
+#progress {
+    float: left;
+    height: 5px;
+    width: 0%;
+    background: #00CC99;
+    cursor: pointer;
+}
+/*
+#handler {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #0E7871;
+    top: 50%;
+    left: 0%;
+    margin-left: -10px;
+    margin-top: -10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+}*/
+.nav {
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+    background-color: #FFF;
+    border: 2px solid #0E7871;
+    /*border-radius: 50%;*/
+    outline: none;
+    margin: 0 7px;
+    cursor: pointer;
+}
+.nav:hover {
+    background-color: #0E7871;
+}
+.nav img {
+    height: 20px;
+    vertical-align: middle;
+}
+.pad {
+    padding-left: 5px;
+}
+#prev {
+    padding-right: 5px;
+}
+#next {
+    padding-left: 4px;
+}
