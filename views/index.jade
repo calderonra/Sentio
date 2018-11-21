@@ -30,14 +30,14 @@ html(lang='en')
             form.form-signin(method='POST' action='')
               h1.h3.mb-3.font-weight-normal Inicia sesión
               label.sr-only(for='inputEmail') Email address
-              input#inputEmail.form-control(type='email', placeholder='Email address', required='', autofocus='')
+              input#inputEmail.form-control(type='email', placeholder='Email address', required='', autofocus='', name='correo')
               label.sr-only(for='inputPassword') Password
-              input#inputPassword.form-control(type='password', placeholder='Password', required='')
+              input#inputPassword.form-control(type='password', placeholder='Password', required='', name='contrasenia')
               .checkbox.mb-3
                 label
                   input(type='checkbox', value='remember-me')
                   |  Remember me
-              a.btn.btn-lg.btn-primary.btn-block(href='/users/inicio', type='submit') Sign in
+              a.btn.btn-lg.btn-primary.btn-block(href='/Inicio/inicio', type='submit') Sign in
               br
               br
               br
