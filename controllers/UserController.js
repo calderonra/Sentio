@@ -14,6 +14,10 @@ AuthController.create = function (req, res, next) {
     res.render('Form/registro')
 }
 
+AuthController.inicio = function(req,res,next){
+    res.render('Inicio/inicio')
+}
+
 /*Para crear el usuario*/
 AuthController.store = async function (req, res) {
     //obteniendo los datos del usuario
