@@ -5,13 +5,13 @@ const bcrypt = require('bcrypt'); //libreria para encriptar
 
 /*nos devuelve la vista signin que es para ingresar al sistema */
 AuthController.login = function (req, res, next) {
-    res.render('signin'); //
+    res.render('index'); //
 }
 
 
 /*nos devuelve la vista signiup para crear al usuario*/
 AuthController.create = function (req, res, next) {
-    res.render('signup')
+    res.render('registro')
 }
 
 /*Para crear el usuario*/
@@ -25,7 +25,7 @@ AuthController.store = async function (req, res) {
     await User.create(user, (error, user) => {
         if (error) // si se produce algun error
             //Devolvemos una vista con los mensajes de error
-            return res.render('signup', { err: error, email: user.email });
+            return res.render('registro', { err: error, email: user.email });
         else {
             //Almacenamos los datos de la consulta en el objeto data
             let data = {
@@ -45,7 +45,7 @@ AuthController.store = async function (req, res) {
                 req.session.user = JSON.stringify(data);
                 console.log(req.session.user);
                 //nos dirigira a la pagina donde se encuentra el perfil del usuario
-                return res.redirect('/users/profile');
+                return res.redirect('/Profile/profile');
             });
         }
     })
