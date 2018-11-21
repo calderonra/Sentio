@@ -11,7 +11,7 @@ AuthController.login = function (req, res, next) {
 
 /*nos devuelve la vista signiup para crear al usuario*/
 AuthController.create = function (req, res, next) {
-    res.render('registro')
+    res.render('Form/registro')
 }
 
 /*Para crear el usuario*/

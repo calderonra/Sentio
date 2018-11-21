@@ -11,12 +11,10 @@ const User = require("../models/users");
 router.get('/', function (req, res) {
   res.send('respond with a resource');
 });
-
-
 //ruta que nos devolvera el formulario para crear usuarios
 router.get('/registro', AuthController.create);
 //ruta que enviara los datos del usuario para almacenarlos en la base de datos
-//router.post('/signup', AuthController.store);
+router.post('/registro', AuthController.store);
 //ruta que nos devolvera el formulario para ingresar
 //router.get('/signin', AuthController.login);
 //ruta que enviara los datos del usuario para ingresar al sistema
