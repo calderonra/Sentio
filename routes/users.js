@@ -12,9 +12,12 @@ router.get('/', function (req, res) {
   res.send('respond with a resource');
 });
 
-//router.get('/inicio',AuthController.inicio);
+router.get('/inicio',AuthController.inicio);
 
-router.get('/inicio', AuthController.login);
+router.get('/profile',AuthController.profile);
+
+router.get('/Editar-perfil',AuthController.editProfile);
+//router.get('/inicio', AuthController.login);
 
 //router.get('/index',AuthController.signin);
 
@@ -32,7 +35,6 @@ router.post('/index',AuthController.signin);
 //router.get('/logout', AuthController.logout);
 /*Middleware que verifica que solo los usuarios registrados podran ingresar a esta seccion */
 router.use(AuthMiddleware.isAuthentication);
-//ruta para acceder al perifl
-router.get('/profile', AuthController.profile);
+
 module.exports = router;
 
