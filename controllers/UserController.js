@@ -18,7 +18,7 @@ AuthController.create = function (req, res, next) {
     res.render('Inicio/inicio')
 }*/
 
-
+ 
 
 /*Para crear el usuario*/
 AuthController.store = async function (req, res) {
