@@ -13,14 +13,14 @@ html(lang='en')
     link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.5.0/css/all.css', integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU', crossorigin='anonymous')
   body#Imagen-bg
     nav.navbar.navbar-expand-md.sticky-top.bg-light
-      a.navbar-brand
+      a.navbar-brand(href='/users/inicio', type='submit')
         img(src='images/logo/banner (1).png', alt="Sentio's logo", width='260vw')
       button.navbar-toggler.bg-toogler(type='button', data-toggle='collapse', data-target='#collapse_target', aria-controls='collapse_target', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
       #collapse_target.collapse.navbar-collapse
         ul.navbar-nav.ml-md-auto
           li.nav-item
-            a.btn.btn-outline-success.btn-lg(href='/users/inicio') Registrarse
+            a.btn.btn-outline-success.btn-lg(href='/users/registro') Registrarse
     br
     br
     .container

@@ -14,10 +14,17 @@ AuthController.create = function (req, res, next) {
     res.render('Form/registro')
 }
 
-/*AuthController.inicio = function(req,res,next){
+AuthController.inicio = function(req,res,next){
     res.render('Inicio/inicio')
-}*/
+}
 
+AuthController.profile = function(req,res,next){
+    res.render('Profile/profile')
+}
+
+AuthController.editProfile = function(req,res,next){
+    res.render('Common links/Editar-perfil')
+}
  
 
 /*Para crear el usuario*/
@@ -90,10 +97,6 @@ AuthController.signin = function(req,res,next){
     });
 };
 
-/*nos dirigira al perfil */
-AuthController.profile = function (req, res) {
-    return res.render('Profile/profile');
-}
 
 AuthController.logout = function (req, res, next) {
     if (req.session) { //si la session existe
