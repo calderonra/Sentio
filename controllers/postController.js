@@ -14,7 +14,9 @@ PostController.create = function (req, res) {
     //codigo de obtener datos de la peticion 
     let data = {
         nombre: req.body.nombre,
-        autor: req.body.autor
+        contenido:req.body.contenido,
+        rutaImagen: req.body.rutaImagen
+        
     }
     //validar valores 
     if (data.nombre && data.autor && data.nombre != '' && data.autor) {
@@ -66,8 +68,10 @@ PostController.get = function (req, res) {
 
 PostController.update = function (params) {
     let update={
+        
         nombre: req.body.nombre,
-        autor: req.body.autor
+        contenido:req.body.contenido,
+        rutaImagen: req.body.rutaImagen
     }
     //ejecuta la update 
     postModel.findByIdAndUpdate(req.params.id, update, function (err, old) {
