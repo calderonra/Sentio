@@ -113,7 +113,8 @@ let app = {
         event.preventDefault();
         let data = {
             nombre: document.postForm.nombre.value,
-            autor: document.postForm.autor.value
+            contenido: document.postForm.contenido.value,
+            ruta:document.postForm.rutaImagen.value
         };
         fetch('/api/post', {
             method: 'POST',
