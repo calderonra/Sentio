@@ -56,8 +56,11 @@ nav.navbar.navbar-expand-md.sticky-top
         form
           input.form-control.mr-sm-2(type='text', placeholder='Title', aria-label='Search')
           input.form-control.mr-sm-2(type='text', placeholder='What are your listening to?', aria-label='Search')
-          button.btn.btn-outline-success.my-2.my-sm-0(type='submit')
-            i.far.fa-image
+          .input-group.mb-3
+            .input-group-prepend
+              span#basic-addon3.input-group-text
+                i.far.fa-image  Paste your image url
+            input#basic-url.form-control(type='text', aria-describedby='basic-addon3')
           button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Post
       br
   main.main.row
