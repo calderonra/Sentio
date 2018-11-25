@@ -8,7 +8,8 @@ let app = {
         this.loadContent();
     },
     addEvents: function () {
-        document.postForm.addEventListener("submit", (event) => {
+
+        document.postForm.addEventListener("click", (event) => {
             this.submitPost(event, this.addRow);
         });
     },
@@ -99,7 +100,7 @@ let app = {
     },
     deletePost: (event, data, tr, tbody) => {
         event.preventDefault();
-        fetch('/api/post/' + data._id, {
+        fetch('/users/post/' + data._id, {
             method: 'DELETE'
         }).then(res => res.json())
             .then(res => {
@@ -116,7 +117,7 @@ let app = {
             contenido: document.postForm.contenido.value,
             ruta:document.postForm.rutaImagen.value
         };
-        fetch('/api/post', {
+        fetch('/users/post', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -132,7 +133,7 @@ let app = {
             });
     },
     loadContent: function () {
-        fetch('/api/post', {
+        fetch('/users/post', {
             method: 'GET'
         }).then(res => {
             return res.json()

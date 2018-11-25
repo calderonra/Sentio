@@ -19,7 +19,7 @@ PostController.create = function (req, res) {
         
     }
     //validar valores 
-    if (data.nombre && data.autor && data.nombre != '' && data.autor) {
+    if (data.nombre && data.contenido && data.rutaImagen != '' && data.autor) {
 
     } else {
         res.status(400);
