@@ -9,9 +9,9 @@ let app = {
     },
     addEvents: function () {
 
-        document.postForm.addEventListener("click", (event) => {
-            this.submitPost(event, this.addRow);
-        });
+        let post = document.postForm;
+        post.addEventListener('submit',this.submitPost);
+        
     },
     addRow: function (data) {
         let tbody = document.getElementsByClassName("tajeta")[0];
