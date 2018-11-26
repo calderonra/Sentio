@@ -1,36 +1,17 @@
-var express =require('express');
-router=express.router();
-PostController=require('../controllers/postController')
+var express = require('express'),
+    router = express.Router(),
+    PostController = require('../controllers/PostController');
 
-//create 
+// Create
+router.post('/',PostController.create);
 
-route.post('/',PostController.create)
-//read
-router.get('/',PostController.read)
+// Read
+router.get('/',PostController.getAll);
+router.get('/:id', PostController.get);
 
-router.get('/:id',function(req,res) {
-    //buscar por id el post 
-    //darlo como json 
-    
-})
+// Update
+router.put('/:id',PostController.update);
 
-
-//update
-
-router.put('/:id',function(req,res) {
-
-//OBTENER datos a actulizar 
-//validar los datos 
-//ejecutar la actualizacion
-
-    
-})
-
-router.delete('/:id',function (req,res) {
-    //intentar eliminar 
-    //notificar resultado
-    
-})
-
-
-module.exports=router;
+// Delete
+router.delete('/:id',PostController.delete);
+module.exports = router; 

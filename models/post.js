@@ -6,7 +6,8 @@ let postmodel=new mongoose.Schema({
         unique=true,
         index: true
     },
-    autor:String
+    contenido:String,
+    rutaImagen:String 
 });
 
 module.exports=mongoose.model('post',postmodel);
