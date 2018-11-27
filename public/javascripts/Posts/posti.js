@@ -8,10 +8,11 @@ let app = {
         this.loadContent();
     },
     addEvents: function () {
+        document.postForm.addEventListener("submit", (event) => {
+            this.submitPost(event, this.addRow);
+        });
 
-        let post = document.postForm;
-        post.addEventListener('submit',this.submitPost);
-        
+
     },
     addRow: function (data) {
         let tbody = document.getElementsByClassName("tajeta")[0];
@@ -88,6 +89,7 @@ let app = {
 
         bisnieto222.innerHTML = '${data.contenido}';
         //nieto.setAttribute("data-src","holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail'","src")
+        return res.json()
 
 
         tr.getElementsByClassName("delete")[0].addEventListener("click", (event) => {
@@ -115,7 +117,7 @@ let app = {
         let data = {
             nombre: document.postForm.nombre.value,
             contenido: document.postForm.contenido.value,
-            ruta:document.postForm.rutaImagen.value
+            ruta: document.postForm.rutaImagen.value
         };
         fetch('/users/post', {
             method: 'POST',
