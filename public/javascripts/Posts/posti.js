@@ -119,7 +119,7 @@ let app = {
             contenido: document.postForm.contenido.value,
             ruta: document.postForm.rutaImagen.value
         };
-        fetch('/users/post', {
+        fetch('/post', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -132,7 +132,8 @@ let app = {
                 } else {
                     document.getElementsByClassName("errors")[0].innerText = "No se pudo guardar";
                 }
-            });
+            })
+            .catch(err => console.log(err));
     },
     loadContent: function () {
         fetch('/users/post', {

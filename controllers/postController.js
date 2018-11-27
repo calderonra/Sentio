@@ -8,17 +8,23 @@ const PostController = {
 };
 
 PostController.create = function (req, res) {
-    res.json({
-        okay=true
-    });
+    /*res.json({
+        okay:true
+    });*/
     //codigo de obtener datos de la peticion 
-    let data = {
+    let post= new postModel({
         nombre: req.body.nombre,
         contenido:req.body.contenido,
-        rutaImagen: req.body.rutaImagen
-        
-    }
+        rutaImagen: req.body.ruta 
+    });
+    post.save(function(error){
+        if(error)   
+            res.status(500);
+        else
+        res.json({message: 'Almacenado con exito' } );
+    });
     //validar valores 
+    /*console.log(data);
     if (data.nombre && data.contenido && data.rutaImagen != '' && data.autor) {
 
     } else {
@@ -34,7 +40,7 @@ PostController.create = function (req, res) {
             res.json({ ok: true, message: 'se guardo con exito' })
         }
     })
-    //guardar en la base de datos 
+    //guardar en la base de datos */
 };
 
 PostController.getAll = function (req, res) {

@@ -10,6 +10,7 @@ const session = require('express-session');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var post = require('./routes/post');
 
 const MongoStore = require('connect-mongo')(session);
 //Credenciales de nuestra base de datos
@@ -56,6 +57,7 @@ app.use('public',express.static(path.join(__dirname, 'views')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/post',post)
 /*
 app.post('/index',function(res,req){
     console.log("vale")

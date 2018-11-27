@@ -1,6 +1,6 @@
 var express = require('express'),
     router = express.Router(),
-    PostController = require('../controllers/PostController');
+    PostController = require('../controllers/postController');
 
 // Create
 router.post('/',PostController.create);

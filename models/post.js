@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 let postmodel=new mongoose.Schema({
     nombre:{
         type:String,
-        unique=true,
+        unique:true,
         index: true
     },
     contenido:String,
