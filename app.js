@@ -57,7 +57,8 @@ app.use('public',express.static(path.join(__dirname, 'views')));
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/post',post)
+app.use('/users/post',post);
+
 /*
 app.post('/index',function(res,req){
     console.log("vale")

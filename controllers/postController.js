@@ -5,6 +5,7 @@ const mongoose = require('mongoose'),
     postModel = require('../models/post')
 
 const PostController = {
+    
 };
 
 PostController.create = function (req, res) {

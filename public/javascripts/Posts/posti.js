@@ -15,6 +15,9 @@ let app = {
 
     },
     addRow: function (data) {
+
+        console.log("AIDUA");
+
         let tbody = document.getElementsByClassName("tajeta")[0];
         let tr = document.createElement("div");
         tr.className = "tarjeta";
@@ -61,14 +64,14 @@ let app = {
         boton1tatara.className = "btn-sm";
 
         boton1tatara.setAttribute("type", "button");
-        boton1tatara.createTextNode("comentar");
+        //boton1tatara.createTextNode("comentar");
 
         let boton2tatara = document.createElement("button");
         boton2tatara.className = "btn";
         boton2tatara.className = "btn-outline-secondary";
         boton2tatara.className = "btn-sm";
         boton2tatara.setAttribute("type", "button");
-        boton2tatara.createTextNode("me gusta");
+        //boton2tatara.createTextNode("me gusta");
         let tataranieto = document.createElement("strong");
         //tataranieto.createTextNode()
 
@@ -87,18 +90,12 @@ let app = {
         tataranieto2222.appendChild(boton2tatara);
 
 
-        bisnieto222.innerHTML = '${data.contenido}';
+        bisnieto222.innerHTML = `${data.contenido}`;
         //nieto.setAttribute("data-src","holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail'","src")
-        return res.json()
+        //return res.json()
 
 
-        tr.getElementsByClassName("delete")[0].addEventListener("click", (event) => {
-            this.deletePost(event, data, tr, tbody);
-        });
-        tr.getElementsByClassName("update")[0].addEventListener("click", (event) => {
-            this.updatePost(tr, tbody, data);
-        });
-        tbody.appendChild(tr);
+        
     },
     deletePost: (event, data, tr, tbody) => {
         event.preventDefault();
@@ -119,7 +116,7 @@ let app = {
             contenido: document.postForm.contenido.value,
             ruta: document.postForm.rutaImagen.value
         };
-        fetch('/post', {
+        fetch('/users/post', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -136,6 +133,7 @@ let app = {
             .catch(err => console.log(err));
     },
     loadContent: function () {
+        console.log("ME HAGO MIERDA ACA");
         fetch('/users/post', {
             method: 'GET'
         }).then(res => {
