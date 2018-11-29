@@ -1,11 +1,16 @@
-var createError = require('http-errors');
+'use strict'
+
 var express = require('express');
+var bodyParser = require('body-parser');
+var app = express();
+var use_routes = require('./routes/users');
+
 var path = require('path');
 var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var createError = require('http-errors');
 const session = require('express-session');
 const passport = require('passport');
 const flash = require('connect-flash');
@@ -26,7 +31,7 @@ mongoose.connect('mongodb://usuariosdb:12345678a@ds245357.mlab.com:45357/usuario
 
 
 
-var app = express();
+
 
 require('./configs/database');
 
@@ -49,8 +54,14 @@ app.set('view engine', 'jade');
 
 app.use(favicon());
 app.use(logger('dev'));
+//middlewares
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({extended: false}));
+//routes
+app.use('/api',use_routes);
+//exports
+module.exports=app;
+
 app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
