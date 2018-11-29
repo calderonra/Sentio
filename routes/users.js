@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
+const passport = require('passport');
 
+const AuthLocal = require("../controllers/AuthLocal");
+//Requerimos autenticaciones locales
 const AuthController = require("../controllers/UserController");
 //Requerimos el Middelware que hemos creado
 const AuthMiddleware = require("../middlewares/AuthMiddleware")
@@ -35,6 +38,43 @@ router.post('/index',AuthController.signin);
 //router.get('/logout', AuthController.logout);
 /*Middleware que verifica que solo los usuarios registrados podran ingresar a esta seccion */
 router.use(AuthMiddleware.isAuthentication);
+
+//routes for passport
+router.post('/signin',passport.authenticate('local-signin',{
+  successRedirect: '/users/profile',
+  failureRedirect: '/users/profile',
+  passReqToCallback: true
+}));
+
+router.get('/signin',(req,res,next)=>{
+  res.render('/users/inicio');
+});
+
+
+
+router.get('/logout',(req,res,next)=>{
+  req.logout();
+  res.redirect('/users/inicio');
+});
+
+//middleware
+router.use((req,res,next)=>{
+  isAuthenticated(req,res,next);
+});
+
+router.get('/users/profile',(req,res,next)=>{
+  res.render('/users/inicio');
+});
+
+function isAuthenticated(req,res,next)
+{
+  if(req.isAuthenticated())
+  {
+      return next();
+  }
+  res.redirect('/users/inicio');
+}
+
 
 module.exports = router;
 

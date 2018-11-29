@@ -7,6 +7,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 const session = require('express-session');
+const passport = require('passport');
+const flash = require('connect-flash');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -116,6 +118,18 @@ app.use(function (err, req, res, next) {
         error: {}
     });
 });
+
+//autentication with passport
+app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.use((req,res,next)=>{
+    app.locals.signupMessage= req.flash('signupMessage');
+    app.locals.signinMessage= req.flash('signinMessage');
+    app.locals.user = req.user;
+    next();
+})
 
 
 module.exports = app;
