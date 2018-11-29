@@ -18,7 +18,7 @@ const { mongodb } = require('./configs/keys');
 
 //coneccion 
 mongoose.Promise=global.Promise;
-mongoose.connect('mongodb://localhost/sentio')
+mongoose.connect('mongodb://usuariosdb:12345678a@ds245357.mlab.com:45357/usuarios')
     .then(()=>console.log('mongoose se conecto'));
     
 
