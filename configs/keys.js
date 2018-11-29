@@ -1,6 +1,6 @@
 module.exports={
     mongodb:
     {
-        URI: 'mongodb://localhost:27017/sentio'
+        URI: 'mongodb://usuariosdb:12345678a@ds245357.mlab.com:45357/usuarios'
     }
 }
