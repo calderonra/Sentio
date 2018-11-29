@@ -7,12 +7,11 @@ let app = {
         this.addEvents();
         this.loadContent();
     },
-    addEvents: function () {
-        document.postForm.addEventListener("submit", (event) => {
-            this.submitPost(event, this.addRow);
-        });
-
-
+    addEvents: function (event) {
+        event.preventDefault();
+        let form = document.querySelector();
+        console.log(form);
+        form.addEventListener('submit',this.addRow);
     },
     addRow: function (data) {
 
@@ -93,6 +92,7 @@ let app = {
         bisnieto222.innerHTML = `${data.contenido}`;
         //nieto.setAttribute("data-src","holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail'","src")
         //return res.json()
+        console.log(data.contenido);
 
 
         
@@ -116,7 +116,8 @@ let app = {
             contenido: document.postForm.contenido.value,
             ruta: document.postForm.rutaImagen.value
         };
-        fetch('/users/post', {
+        console.log("gjhklñ");
+       /* fetch('/users/post/inicio', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -124,16 +125,17 @@ let app = {
             }
         }).then(res => res.json())
             .then(_data => {
-                if (_data.ok) {
+                /*if (_data.ok) {
+                    console.log(_data.guardado);
                     addRow(_data.guardado);
                 } else {
                     document.getElementsByClassName("errors")[0].innerText = "No se pudo guardar";
-                }
+                }console.log("afdf");
             })
-            .catch(err => console.log(err));
+            .catch(err => console.log(err));*/
     },
     loadContent: function () {
-        console.log("ME HAGO MIERDA ACA");
+        
         fetch('/users/post', {
             method: 'GET'
         }).then(res => {

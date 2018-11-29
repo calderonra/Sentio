@@ -22,7 +22,7 @@ PostController.create = function (req, res) {
         if(error)   
             res.status(500);
         else
-        res.json({message: 'Almacenado con exito' } );
+        res.status(200).json({message: 'Almacenado con exito' } );
     });
     //validar valores 
     /*console.log(data);
