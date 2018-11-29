@@ -3,7 +3,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
-var use_routes = require('./routes/users');
+var use_routes = require('./routes/user');
 
 var path = require('path');
 var favicon = require('static-favicon');
