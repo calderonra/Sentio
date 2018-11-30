@@ -1,0 +1,51 @@
+
+<body>
+  <div class="container">
+    <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
+      <div class="header">
+        <h1>Registro</h1>
+        <p>Introduce tus datos a continuación</p>
+      </div>
+      <div class="inputs">
+        <p>
+          <input type="text" name="name" placeholder="Nombre" #name="ngModel" [(ngModel)]="user.name" class="form-control"
+            required />
+          <span *ngIf="!name.valid && name.touched">
+            Éste campo es obligatorio.
+          </span>
+        </p>
+        <p>
+          <input type="text" name="surname" placeholder="Apellido" #surname="ngModel" [(ngModel)]="user.surname" class="form-control"
+            required />
+          <span *ngIf="!surname.valid && surname.touched">
+            Éste campo es obligatorio.
+          </span>
+        </p>
+        <p>
+          <input type="text" name="nick" placeholder="Nickname" #nick="ngModel" [(ngModel)]="user.nick" class="form-control"
+            required />
+          <span *ngIf="!nick.valid && nick.touched">
+            Éste campo es obligatorio.
+          </span>
+        </p>
+        <p>
+          <input type="text" name="email" placeholder="Correo Electrónico" #email="ngModel" [(ngModel)]="user.email"
+            class="form-control" required />
+          <span *ngIf="!email.valid && email.touched">
+            Éste campo es obligatorio.
+          </span>
+        </p>
+        <p>
+          <input type="password" name="password" placeholder="Contraseña" #password="ngModel" [(ngModel)]="user.password"
+            class="form-control" required />
+          <span *ngIf="!password.valid && password.touched">
+            Éste campo es obligatorio.
+          </span>
+        </p>
+        <p>
+          <input type="submit" value="{{title}}" class="btn btn-primary" [disabled]="!registerForm.form.valid">
+        </p>
+      </div>
+    </form>
+  </div>
+</body>

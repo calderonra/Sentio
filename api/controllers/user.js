@@ -19,7 +19,7 @@ function pruebas(req, res) {
 }
 //Registrar
 function saveUser(req, res) {
-    res.render('Form/registro');
+    
 
     var params = req.body;
     var user = new User();

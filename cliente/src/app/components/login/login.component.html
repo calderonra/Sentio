@@ -1,0 +1,28 @@
+<div class="container text-center">
+  
+  <div class="alert alert-success" *ngIf="status == 'success'">
+    Te has conectado correctamente, bienvenid@.
+  </div>
+
+  <div class="alert alert-danger" *ngIf="status == 'error'">
+    El registro no ha podido completarse, quizás tu email o nickname ya esté en uso. Inténtalo de nuevo.
+
+  </div>
+  
+  <div class="col-md-6">
+      <form #logInForm = 'ngForm' (ngSubmit)="onSubmit()" class="form-signin"><br><br><br>
+        <h1 class="h3 mb-3 font-weight-normal">{{title}}</h1>
+        <label class="sr-only" for="inputEmail">Correo electrónico</label>
+        <input class="form-control" id="inputEmail" type="email" placeholder="Correo electrónico" name="email" #email="ngModel" [(ngModel)]="user.email" required >
+        <span *ngIf="!email.valid && email.touched">El email no es correcto</span>
+        <label class="sr-only" for="inputPassword">Contraseña</label><br>
+        <input class="form-control" id="inputEmail" type="password" placeholder="password" name="password" #password="ngModel" [(ngModel)]="user.password" required>
+        <span *ngIf="!password.valid && password.touched">La contraseña no es correcta</span>
+        <br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" value="Entrar" [disabled]>Sign in</button>
+        
+        <p class="mt-5 mb-3 text-muted">© Sentio 2018</p><br>
+        <p class="mt-5 mb-3 text-muted">FEEL THE MUSIC - ENJOY THE MOMENTS</p>
+      </form>
+    </div>
+  </div>
