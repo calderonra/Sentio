@@ -3,7 +3,7 @@ var mongoosePaginate = require('mongoose-pagination');
 var fs = require('fs');
 var path = require('path');
 var bcrypt = require('bcrypt-nodejs');
-var User = require('../models/user');
+var User = require('../models/users');
 var jwt = require('../services/jwt');
 
 function home(req, res) {
@@ -19,6 +19,8 @@ function pruebas(req, res) {
 }
 //Registrar
 function saveUser(req, res) {
+    res.render('Form/registro');
+
     var params = req.body;
     var user = new User();
 
@@ -116,7 +118,7 @@ function getUser(req, res) {
 
 
 //Devolver un listado de usuarios paginados
-function getUser(req, res) {
+function getUsers(req, res) {
     var identity_user_id = req.user.sub;
 
     var page = 1;

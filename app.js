@@ -3,7 +3,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
-var use_routes = require('./routes/user');
+var use_routes = require('./api/routes/users');
 
 var path = require('path');
 var favicon = require('static-favicon');
@@ -15,9 +15,11 @@ const session = require('express-session');
 const passport = require('passport');
 const flash = require('connect-flash');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
-var post = require('./routes/post');
+var routes = require('./api/routes/index');
+
+var register = require('./api/routes/users')
+//var users = require('./routes/users');
+//var post = require('./routes/post');
 
 const MongoStore = require('connect-mongo')(session);
 //Credenciales de nuestra base de datos
@@ -35,19 +37,6 @@ mongoose.connect('mongodb://usuariosdb:12345678a@ds245357.mlab.com:45357/usuario
 
 require('./configs/database');
 
-
-
-// view engine setup
-app.use(session({
-    secret:"Hello World!!!",
-    resave: true, // para alamcenar el objeto session
-    saveUninitialized: true, // inicializar si el objeto esta vacio
-    //para almacenar la sesion en la base de datos
-    store: new MongoStore({
-        url: mongodb.URI,
-        autoReconnect: true
-    })
-    }));
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -69,36 +58,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('public',express.static(path.join(__dirname, 'views')));
 
 app.use('/', routes);
-app.use('/users', users);
-app.use('/users/post',post);
-
-/*
-app.post('/index',function(res,req){
-    console.log("vale")
-    var username = req.body.password;
-
-    new username({username:email}).fetch().then(function(found){
-        if(found){
-            console.log("Encontrado");
-            
-            bcrypt.compare(addEventListener, found.get('contrasenia'), function(err,res){
-                if(res){
-                    req.session.regenerate(function(){
-                        console.log("NIce");
-                        res.redirect('/Inicio/inicio')
-                        req.session.found = found.username;
-                    });
-                } else{
-                    console.log("nel");
-                    res.redirect('/index')
-                }
-            })
-        } else{
-            console.log("-.-")
-            res.redirect('/index');
-        }
-    })
-});*/
+app.use('/users',use_routes);
+app.use('/users',register);
+//app.use('/users', users);
+//app.use('/users/post',post);
 
 /// catch 404 and forwarding to error handler
 app.use(function (req, res, next) {
