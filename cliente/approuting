@@ -1,0 +1,10 @@
+import {TimelineComponent} from './component/timeline/timeline.component';
+
+
+cont appRoutes: Routes =[
+
+
+    {path: 'timeline', component: TimelineComponent},
+]
+
+//episodio 104, min 6:15

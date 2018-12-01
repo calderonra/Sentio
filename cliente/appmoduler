@@ -1,0 +1,7 @@
+import {TimelineComponent} from './component/timeline/timeline.component';
+
+@NgModule({
+
+
+    TimelineComponent
+})
