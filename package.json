@@ -20,7 +20,7 @@
     "jwt-simple": "^0.5.5",
     "moment": "^2.22.2",
     "mongo-connect": "0.0.6",
-    "mongodb": "^3.1.10",
+    "mongodb": "^3.1.13",
     "mongoose": "^5.3.14",
     "mongoose-pagination": "^1.0.0",
     "morgan": "~1.0.0",
